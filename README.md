@@ -58,6 +58,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **PowerShdll** run PowerShell with rundll32. Bypass software restrictions. https://github.com/p3nt4/PowerShdll
 * **Ultimate AppLocker ByPass List** The goal of this repository is to document the most common techniques to bypass AppLocker. https://github.com/api0cradle/UltimateAppLockerByPassList
 * **Ruler** is a tool that allows you to interact with Exchange servers remotely, through either the MAPI/HTTP or RPC/HTTP protocol. https://github.com/sensepost/ruler
+* **Generate-Macro** is a standalone PowerShell script that will generate a malicious Microsoft Office document with a specified payload and persistence method. https://github.com/enigma0x3/Generate-Macro
 
 ## Delivery
 * **FiercePhish** is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more. https://github.com/Raikia/FiercePhish
@@ -129,6 +130,9 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **UACMe** is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system. https://github.com/hfiref0x/UACME
 * **windows-kernel-exploits** a collection windows kernel exploit. https://github.com/SecWiki/windows-kernel-exploits
 * **PowerUp** aims to be a clearinghouse of common Windows privilege escalation vectors that rely on misconfigurations. https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
+* **The Elevate Kit** demonstrates how to use third-party privilege escalation attacks with Cobalt Strike's Beacon payload. https://github.com/rsmudge/ElevateKit
+* **Sherlock** a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
+ https://github.com/rasta-mouse/Sherlock
 
 ## Data Exfiltration
 * **CloakifyFactory** & the Cloakify Toolset - Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. https://github.com/TryCatchHCF/Cloakify
@@ -139,13 +143,16 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
 
 ## Misc
-* **Aggressor Script** is a scripting language for red team operations and adversary simulations inspired by scriptable IRC clients and bots.
+* **Aggressor Scripts** is a scripting language for red team operations and adversary simulations inspired by scriptable IRC clients and bots.
   * https://github.com/Und3rf10w/Aggressor-scripts
   * https://github.com/harleyQu1nn/AggressorScripts
   * https://github.com/rasta-mouse/Aggressor-Script
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
+* **PowerShell Scripts** a collection powershell scripts for red teaming and pentesting.
+  * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
+  * https://github.com/enigma0x3/Misc-PowerShell-Stuff
 
 ## References
 * **Adversary Emulation Plans** To showcase the practical use of ATT&CK for offensive operators and defenders, MITRE created Adversary Emulation Plans. https://attack.mitre.org/wiki/Adversary_Emulation_Plans
