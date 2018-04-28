@@ -97,7 +97,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **cs2modrewrite** a tools for convert Cobalt Strike profiles to modrewrite scripts. https://github.com/threatexpress/cs2modrewrite
 * **e2modrewrite** a tools for convert Empire profiles to Apache modrewrite scripts. https://github.com/infosecn1nja/e2modrewrite
 * **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
-* Domain fronting using Google app engine. https://github.com/redteam-cyberark/Google-Domain-fronting
+* **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
+* **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
 
 ## Lateral Movement
 *  **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
@@ -120,6 +121,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Mimikatz** is an open-source utility that enables the viewing of credential information from the Windows lsass. https://github.com/gentilkiwi/mimikatz
 * **LaZagne** project is an open source application used to retrieve lots of passwords stored on a local computer. https://github.com/AlessandroZ/LaZagne
 * **mimipenguin** a tool to dump the login password from the current linux desktop user. Adapted from the idea behind the popular Windows tool mimikatz. https://github.com/huntergregal/mimipenguin
+* **PsExec** is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software. https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
 
 ## Establish Foothold
 * **Tunna** is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments. https://github.com/SECFORCE/Tunna
@@ -152,9 +154,10 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
-* **PowerShell Scripts** a collection powershell scripts for red teaming and pentesting.
+* **Scripts** a collection scripts for red teaming and pentesting.
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
   * https://github.com/enigma0x3/Misc-PowerShell-Stuff
+  * https://github.com/ChrisTruncer/PenTestScripts
 
 ## References
 * **Adversary Emulation Plans** To showcase the practical use of ATT&CK for offensive operators and defenders, MITRE created Adversary Emulation Plans. https://attack.mitre.org/wiki/Adversary_Emulation_Plans
