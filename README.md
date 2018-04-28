@@ -99,6 +99,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
 * **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
+* Serving Random Payloads with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
 
 ## Lateral Movement
 *  **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
@@ -146,6 +147,9 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Egress-Assess** is a tool used to test egress data detection capabilities. https://github.com/ChrisTruncer/Egress-Assess
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
 
+## Embedded and Peripheral Devices Hacking
+* **magspoof** a portable device that can spoof/emulate any magnetic stripe, credit card or hotel card "wirelessly", even on standard magstripe (non-NFC/RFID) readers. https://github.com/samyk/magspoof
+
 ## Misc
 * **Aggressor Scripts** is a scripting language for red team operations and adversary simulations inspired by scriptable IRC clients and bots.
   * https://github.com/Und3rf10w/Aggressor-scripts
@@ -165,3 +169,4 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Advanced Threat Tactics – Course and Notes** This is a course on red team operations and adversary simulations. https://blog.cobaltstrike.com/2015/09/30/advanced-threat-tactics-course-and-notes
 * **Red Team Tips** as posted by @vysecurity on Twitter. https://github.com/vysec/RedTips
 * **ATT&CK for Enterprise Software** is a generic term for custom or commercial code, operating system utilities, open-source software, or other tools used to conduct behavior modeled in ATT&CK. https://attack.mitre.org/wiki/Software
+* **Awesome Lockpicking** a curated list of awesome guides, tools, and other resources related to the security and compromise of locks, safes, and keys. https://github.com/meitar/awesome-lockpicking
