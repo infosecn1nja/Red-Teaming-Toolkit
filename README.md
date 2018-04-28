@@ -3,7 +3,7 @@
 A collection of open source and commercial tools that aid in red team operations. This repository will help you during red team engagement. If you want to contribute to this list send me a pull request.
 ___________________________________________________________________________________________________________
 
-<img src="https://camo.githubusercontent.com/117d02ebc85c5644d7015e54e69c271d9fcad864/68747470733a2f2f75706c6f6164732d73736c2e776562666c6f772e636f6d2f3538383636636165616263383364356537633537346337312f3538626534333132646331336239646537343638363132615f5265642d5465616d2d41747461636b2d4c6966656379636c652d702d32303030783735382e6a706567" width="600">
+<img src="https://camo.githubusercontent.com/48dd521217c633df7b47f36f9b001f34498f8ae3/687474703a2f2f726974686f6c747a2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30322f61747461636b2d6c6966652d6379636c652e706e67" width="600">
 
 ## Reconnaissance
 * **Maltego** is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. https://www.paterva.com/web7/downloads.php
