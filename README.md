@@ -61,6 +61,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Generate-Macro** is a standalone PowerShell script that will generate a malicious Microsoft Office document with a specified payload and persistence method. https://github.com/enigma0x3/Generate-Macro
 * **Malicious Macro MSBuild Generator** Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass. https://github.com/infosecn1nja/MaliciousMacroMSBuild
 * **META TWIN** is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. https://github.com/threatexpress/metatwin
+* **Malicious file maker/sender** to create and send malicious attachments to test your email filter/alerting. https://github.com/carnal0wnage/malicious_file_maker
 
 ## Delivery
 * **FiercePhish** is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more. https://github.com/Raikia/FiercePhish
