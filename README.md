@@ -105,7 +105,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
 * **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
-* Serving Random Payloads with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
+* **Automated Empire Infrastructure** https://github.com/bneg/RedTeam-Automation
+* **Serving Random Payloads** with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
 
 ## Lateral Movement
 *  **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
