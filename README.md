@@ -161,9 +161,11 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
 * **Scripts** a collection scripts for red teaming and pentesting.
+  * https://github.com/threatexpress/red-team-scripts
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
   * https://github.com/enigma0x3/Misc-PowerShell-Stuff
   * https://github.com/ChrisTruncer/PenTestScripts
+  * https://github.com/bluscreenofjeff/Scripts
 
 ## References
 * **PRE-ATT&CK** Adversarial Tactics, Techniques & Common Knowledge for Left-of-Exploit. https://attack.mitre.org/pre-attack/index.php/Main_Page
