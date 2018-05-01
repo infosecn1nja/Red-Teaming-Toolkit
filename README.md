@@ -14,7 +14,6 @@ ________________________________________________________________________________
 * [Establish Foothold](#establish-foothold)
 * [Escalate Privileges](#establish-foothold)
 * [Data Exfiltration](#data-exfiltration)
-* [Embedded & Peripheral Devices Hacking](#embedded--peripheral-devices-hacking)
 * [Misc](#misc)
 * [References](#references)
 
@@ -174,10 +173,11 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Egress-Assess** is a tool used to test egress data detection capabilities. https://github.com/ChrisTruncer/Egress-Assess
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
 
-## Embedded & Peripheral Devices Hacking
+## Misc
+### Embedded & Peripheral Devices Hacking
 * **magspoof** a portable device that can spoof/emulate any magnetic stripe, credit card or hotel card "wirelessly", even on standard magstripe (non-NFC/RFID) readers. https://github.com/samyk/magspoof
 
-## Misc
+### Scripts
 * **Aggressor Scripts** is a scripting language for red team operations and adversary simulations inspired by scriptable IRC clients and bots.
   * https://github.com/invokethreatguy/CSASC
   * https://github.com/secgroundzero/CS-Aggressor-Scripts
