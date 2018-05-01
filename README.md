@@ -173,13 +173,15 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
-* **Scripts** a collection scripts for red teaming and pentesting.
+* **Various scripts** for red teaming and pentesting.
   * https://github.com/FuzzySecurity/PowerShell-Suite
   * https://github.com/threatexpress/red-team-scripts
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
   * https://github.com/enigma0x3/Misc-PowerShell-Stuff
   * https://github.com/ChrisTruncer/PenTestScripts
   * https://github.com/bluscreenofjeff/Scripts
+  * https://github.com/xorrior/RandomPS-Scripts
+  * https://github.com/xorrior/Random-CSharpTools
 
 ## References
 * **Cheat Sheets** for various projects (Beacon/Cobalt Strike,PowerView, PowerUp, Empire, and PowerSploit). https://github.com/HarmJ0y/CheatSheets
