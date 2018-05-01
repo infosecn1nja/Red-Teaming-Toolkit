@@ -165,6 +165,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 
 ## Misc
 * **Aggressor Scripts** is a scripting language for red team operations and adversary simulations inspired by scriptable IRC clients and bots.
+  * https://github.com/invokethreatguy/CSASC
+  * https://github.com/secgroundzero/CS-Aggressor-Scripts
   * https://github.com/Und3rf10w/Aggressor-scripts
   * https://github.com/harleyQu1nn/AggressorScripts
   * https://github.com/rasta-mouse/Aggressor-Script
@@ -189,4 +191,5 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Red Team Tips** as posted by @vysecurity on Twitter. https://vincentyiu.co.uk/red-team-tips
 * **Awesome Red Teaming** List of Awesome Red Team / Red Teaming Resources. https://github.com/yeyintminthuhtut/Awesome-Red-Teaming
 * **ATT&CK for Enterprise Software** is a generic term for custom or commercial code, operating system utilities, open-source software, or other tools used to conduct behavior modeled in ATT&CK. https://attack.mitre.org/wiki/Software
+* **Planning a Red Team exercise** This document helps inform red team planning by contrasting against the very specific red team style described in Red Teams. https://github.com/magoo/redteam-plan
 * **Awesome Lockpicking** a curated list of awesome guides, tools, and other resources related to the security and compromise of locks, safes, and keys. https://github.com/meitar/awesome-lockpicking
