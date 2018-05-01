@@ -63,6 +63,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **META TWIN** is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. https://github.com/threatexpress/metatwin
 * **Malicious file maker/sender** to create and send malicious attachments to test your email filter/alerting. https://github.com/carnal0wnage/malicious_file_maker
 * **DotNetToJScript** a tool to create a JScript file which loads a .NET v2 assembly from memory. https://github.com/tyranid/DotNetToJScript
+* **PSAmsi** is a tool for auditing and defeating AMSI signatures. https://github.com/cobbr/PSAmsi
 * **Reflective DLL injection** is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process. https://github.com/stephenfewer/ReflectiveDLLInjection
 
 ## Delivery
@@ -135,7 +136,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **KeeThief** allows for the extraction of KeePass 2.X key material from memory, as well as the backdooring and enumeration of the KeePass trigger system. https://github.com/HarmJ0y/KeeThief
 * **PSAttack** combines some of the best projects in the infosec powershell community into a self contained custom PowerShell console. https://github.com/jaredhaight/PSAttack
 * **Internal Monologue Attack** Retrieving NTLM Hashes without Touching LSASS. https://github.com/eladshamir/Internal-Monologue
-* **PSAmsi** is a tool for auditing and defeating AMSI signatures. https://github.com/cobbr/PSAmsi
+* **Impacket** is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (for instance NMB, SMB1-3 and MS-DCERPC) the protocol implementation itself. https://github.com/CoreSecurity/impacket
 
 ## Establish Foothold
 * **Tunna** is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments. https://github.com/SECFORCE/Tunna
@@ -173,7 +174,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
-* A collection scripts for red teaming and pentesting
+* A collection scripts useful for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
   * https://github.com/threatexpress/red-team-scripts
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
