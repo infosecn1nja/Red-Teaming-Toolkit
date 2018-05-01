@@ -173,7 +173,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
-* **Various scripts** for red teaming and pentesting.
+* A collection scripts for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
   * https://github.com/threatexpress/red-team-scripts
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
@@ -195,3 +195,4 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **ATT&CK for Enterprise Software** is a generic term for custom or commercial code, operating system utilities, open-source software, or other tools used to conduct behavior modeled in ATT&CK. https://attack.mitre.org/wiki/Software
 * **Planning a Red Team exercise** This document helps inform red team planning by contrasting against the very specific red team style described in Red Teams. https://github.com/magoo/redteam-plan
 * **Awesome Lockpicking** a curated list of awesome guides, tools, and other resources related to the security and compromise of locks, safes, and keys. https://github.com/meitar/awesome-lockpicking
+* **Awesome Threat Intelligence** a curated list of awesome Threat Intelligence resources. https://github.com/hslatman/awesome-threat-intelligence
