@@ -124,6 +124,8 @@ https://github.com/chrismaddalena/GoReport
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
 * **Automated Empire Infrastructure** https://github.com/bneg/RedTeam-Automation
 * **Serving Random Payloads** with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
+* **meek** is a blocking-resistant pluggable transport for Tor. It encodes a
+data stream as a sequence of HTTPS requests and responses. https://github.com/arlolra/meek
 
 ## Lateral Movement
 *  **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
