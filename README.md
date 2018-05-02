@@ -196,6 +196,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
   * https://github.com/bluscreenofjeff/Scripts
   * https://github.com/xorrior/RandomPS-Scripts
   * https://github.com/xorrior/Random-CSharpTools
+  * https://github.com/mgeeky/Penetration-Testing-Tools/tree/master/social-engineering
 
 ## References
 * **Cheat Sheets** for various projects (Beacon/Cobalt Strike,PowerView, PowerUp, Empire, and PowerSploit). https://github.com/HarmJ0y/CheatSheets
