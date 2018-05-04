@@ -78,7 +78,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **PSAmsi** is a tool for auditing and defeating AMSI signatures. https://github.com/cobbr/PSAmsi
 * **Reflective DLL injection** is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process. https://github.com/stephenfewer/ReflectiveDLLInjection
 * **subTee gists code backups** https://github.com/caseysmithrc/subTee-gits-backups
-* **Bad-PDF** create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows machines. https://github.com/deepzec/Bad-Pdf
+* **Bad PDF** create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows machines. https://github.com/deepzec/Bad-Pdf
+* **SpookFlare** has a different perspective to bypass security measures and it gives you the opportunity to bypass the endpoint countermeasures at the client-side detection and network-side detection. https://github.com/hlldz/SpookFlare
 
 ## Delivery
 * **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. https://github.com/securestate/king-phisher
