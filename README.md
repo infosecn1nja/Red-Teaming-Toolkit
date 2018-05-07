@@ -80,6 +80,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **subTee gists code backups** https://github.com/caseysmithrc/subTee-gits-backups
 * **Bad PDF** create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows machines. https://github.com/deepzec/Bad-Pdf
 * **SpookFlare** has a different perspective to bypass security measures and it gives you the opportunity to bypass the endpoint countermeasures at the client-side detection and network-side detection. https://github.com/hlldz/SpookFlare
+* **Great SCT** is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team. https://github.com/GreatSCT/GreatSCT
 
 ## Delivery
 * **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. https://github.com/securestate/king-phisher
