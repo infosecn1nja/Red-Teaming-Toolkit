@@ -200,6 +200,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * A collection scripts useful for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
   * https://github.com/threatexpress/red-team-scripts
+  * https://github.com/SadProcessor/SomeStuff
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
   * https://github.com/enigma0x3/Misc-PowerShell-Stuff
   * https://github.com/ChrisTruncer/PenTestScripts
