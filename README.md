@@ -81,6 +81,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Worse PDF** turn a normal PDF file into malicious.Use to steal Net-NTLM Hashes from windows machines. https://github.com/3gstudent/Worse-PDF
 * **SpookFlare** has a different perspective to bypass security measures and it gives you the opportunity to bypass the endpoint countermeasures at the client-side detection and network-side detection. https://github.com/hlldz/SpookFlare
 * **Great SCT** is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team. https://github.com/GreatSCT/GreatSCT
+* **Meterpreter_Paranoid_Mode.sh** allows users to secure your staged/stageless connection for Meterpreter by having it check the certificate of the handler it is connecting to. https://github.com/r00t-3xp10it/Meterpreter_Paranoid_Mode-SSL
 
 ## Delivery
 * **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. https://github.com/securestate/king-phisher
