@@ -64,7 +64,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **macro_pack** is a tool by @EmericNasi used to automatize obfuscation and generation of MS Office documents, VB scripts, and other formats for pentest, demo, and social engineering assessments. https://github.com/sevagas/macro_pack
 * **StarFighters** a JavaScript and VBScript Based Empire Launcher. https://github.com/Cn33liz/StarFighters
 * **nps_payload** this script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources. https://github.com/trustedsec/nps_payload
-* **Social Engineering Payloads** is a collection of generic payloads for red team and social engineering assessments. https://github.com/t3ntman/Social-Engineering-Payloads
+* **SocialEngineeringPayloads** a collection of social engineering tricks and payloads being used for credential theft and spear phishing attacks.. https://github.com/bhdresh/SocialEngineeringPayloads
 * **The Social-Engineer Toolkit** is an open-source penetration testing framework designed for social engineering. https://github.com/trustedsec/social-engineer-toolkit
 * **Phishery** is a Simple SSL Enabled HTTP server with the primary purpose of phishing credentials via Basic Authentication.  https://github.com/ryhanson/phishery
 * **PowerShdll** run PowerShell with rundll32. Bypass software restrictions. https://github.com/p3nt4/PowerShdll
@@ -167,6 +167,8 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **Blade** is a webshell connection tool based on console, currently under development and aims to be a choice of replacement of Chooper. https://github.com/wonderqs/Blade
 * **TinyShell** Web Shell Framework. https://github.com/threatexpress/tinyshell
 * **PowerLurk** is a PowerShell toolset for building malicious WMI Event Subsriptions. https://github.com/Sw4mpf0x/PowerLurk
+* **RPIVOT** allows to tunnel traffic into internal network via socks 4. It works like ssh dynamic port forwarding but in the opposite direction.. https://github.com/klsecservices/rpivot
+* **3proxy** tiny proxy server. https://github.com/z3APA3A/3proxy
 
 ## Escalate Privileges
 * **UACMe** is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system. https://github.com/hfiref0x/UACME
