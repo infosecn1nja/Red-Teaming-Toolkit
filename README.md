@@ -83,6 +83,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **SpookFlare** has a different perspective to bypass security measures and it gives you the opportunity to bypass the endpoint countermeasures at the client-side detection and network-side detection. https://github.com/hlldz/SpookFlare
 * **Great SCT** is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team. https://github.com/GreatSCT/GreatSCT
 * **nps** running powershell without powershell. https://github.com/Ben0xA/nps
+* **lnk2pwn** Generates malicious shortcut(.lnk) files. https://github.com/tommelo/lnk2pwn
 
 ## Delivery
 * **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. https://github.com/securestate/king-phisher
