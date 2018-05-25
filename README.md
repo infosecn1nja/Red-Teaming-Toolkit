@@ -37,6 +37,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Probable Wordlists** sorted by probability originally created for password generation and testing. https://github.com/berzerk0/Probable-Wordlists
 * **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
 * **typofinder** a finder of domain typos showing country of IP address. https://github.com/nccgroup/typofinder
+* **SecurityTrails** quickly gather information about associated domains and IPs of a company, web based or as integration for spiderfoot https://securitytrails.com/ 
 
 ## Weaponization
 * **Composite Moniker** Proof of Concept exploit for CVE-2017-8570. https://github.com/rxwx/CVE-2017-8570
