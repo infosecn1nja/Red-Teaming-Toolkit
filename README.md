@@ -27,7 +27,6 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **SimplyEmail** Email recon made fast and easy, with a framework to build on. https://github.com/killswitch-GUI/SimplyEmail
 * **Recon-ng** is a full-featured Web Reconnaissance framework written in Python. https://bitbucket.org/LaNMaSteR53/recon-ng
 * **PowerMeta** searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. https://github.com/dafthack/PowerMeta
-* **raven** is a Linkedin information gathering tool that can be used by pentesters to gather information about an organization employees using Linkedin. https://github.com/0x09AL/raven
 * **AWSBucketDump** is a tool to quickly enumerate AWS S3 buckets to look for loot. https://github.com/jordanpotti/AWSBucketDump
 * **SpiderFoot** the open source footprinting and intelligence-gathering tool. https://github.com/smicallef/spiderfoot
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
@@ -37,6 +36,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Probable Wordlists** sorted by probability originally created for password generation and testing. https://github.com/berzerk0/Probable-Wordlists
 * **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
 * **typofinder** a finder of domain typos showing country of IP address. https://github.com/nccgroup/typofinder
+* **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
 
 ## Weaponization
 * **Composite Moniker** Proof of Concept exploit for CVE-2017-8570. https://github.com/rxwx/CVE-2017-8570
