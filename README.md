@@ -44,7 +44,6 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **CVE-2017-11882 Exploit** accepts over 17k bytes long command/code in maximum. https://github.com/unamer/CVE-2017-11882
 * **Adobe Flash Exploit** CVE-2018-4878. https://github.com/anbai-inc/CVE-2018-4878
 * **Exploit toolkit CVE-2017-0199** is a handy python script which provides pentesters and security researchers a quick and effective way to test Microsoft Office RCE. https://github.com/bhdresh/CVE-2017-0199
-* **CVE-2017-8464** LNK Remote Code Execution Vulnerability. https://github.com/nixawk/labs/blob/master/CVE-2017-8464/exploit_CVE-2017-8464.py
 * **demiguise** is a HTA encryption tool for RedTeams. https://github.com/nccgroup/demiguise
 * **Office-DDE-Payloads** collection of scripts and templates to generate Office documents embedded with the DDE, macro-less command execution technique. https://github.com/0xdeadbeefJERKY/Office-DDE-Payloads
 * **CACTUSTORCH** Payload Generation for Adversary Simulations. https://github.com/mdsecactivebreach/CACTUSTORCH
