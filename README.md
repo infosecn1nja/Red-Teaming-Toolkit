@@ -108,7 +108,7 @@ https://github.com/chrismaddalena/GoReport
 * **Gcat** a stealthy Python based backdoor that uses Gmail as a command and control server. https://github.com/byt3bl33d3r/gcat
 * **TrevorC2** is a legitimate website (browsable) that tunnels client/server communications for covert command execution. https://github.com/trustedsec/trevorc2
 * **Merlin** is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang. https://github.com/Ne0nd0g/merlin
-* Quasar is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you. https://github.com/quasar/QuasarRAT
+* **Quasar** is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you. https://github.com/quasar/QuasarRAT
 
 ### Staging
 * **Red Baron** is a set of modules and custom/third-party providers for Terraform which tries to automate creating resilient, disposable, secure and agile infrastructure for Red Teams. https://github.com/Coalfire-Research/Red-Baron
@@ -215,6 +215,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * A collection scripts useful for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
   * https://github.com/nettitude/Powershell
+  * https://github.com/Mr-Un1k0d3r/RedTeamPowershellScripts
   * https://github.com/threatexpress/red-team-scripts
   * https://github.com/SadProcessor/SomeStuff
   * https://github.com/rvrsh3ll/Misc-Powershell-Scripts
