@@ -177,7 +177,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **PowerLurk** is a PowerShell toolset for building malicious WMI Event Subsriptions. https://github.com/Sw4mpf0x/PowerLurk
 * **RPIVOT** allows to tunnel traffic into internal network via socks 4. It works like ssh dynamic port forwarding but in the opposite direction. https://github.com/klsecservices/rpivot
 * **3proxy** tiny proxy server. https://github.com/z3APA3A/3proxy
-* **Hans** makes it possible to tunnel IPv4 through ICMP echo packets, so you could call it a ping tunnel. . https://code.gerade.org/hans/
+* **Hans** makes it possible to tunnel IPv4 through ICMP echo packets, so you could call it a ping tunnel. https://code.gerade.org/hans/
 
 ## Escalate Privileges
 * **UACMe** is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system. https://github.com/hfiref0x/UACME
