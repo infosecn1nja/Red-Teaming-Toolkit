@@ -36,6 +36,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **spoofcheck** a program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing. https://github.com/BishopFox/spoofcheck
 * **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
 * **typofinder** a finder of domain typos showing country of IP address. https://github.com/nccgroup/typofinder
+* **truffleHog** searches through git repositories for secrets, digging deep into commit history and branches.  https://github.com/dxa4481/truffleHog
+
 ### Frameworks
 * **SpiderFoot** the open source footprinting and intelligence-gathering tool. https://github.com/smicallef/spiderfoot
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
