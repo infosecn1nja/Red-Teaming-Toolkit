@@ -193,6 +193,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **The Elevate Kit** demonstrates how to use third-party privilege escalation attacks with Cobalt Strike's Beacon payload. https://github.com/rsmudge/ElevateKit
 * **Sherlock** a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
  https://github.com/rasta-mouse/Sherlock
+* **Tokenvator** a tool to elevate privilege with Windows Tokens. https://github.com/0xbadjuju/Tokenvator
 
 ## Data Exfiltration
 * **CloakifyFactory** & the Cloakify Toolset - Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. https://github.com/TryCatchHCF/Cloakify
