@@ -29,6 +29,7 @@ ________________________________________________________________________________
 ### Passive Intelligence Gathering
 * **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
 * **ScrapedIn** a tool to scrape LinkedIn without API restrictions for data reconnaissance. https://github.com/dchrastil/ScrapedIn
+* **linkScrape** A LinkedIn user/company enumeration tool. https://github.com/NickSanzotta/linkScrape
 * **FOCA** (Fingerprinting Organizations with Collected Archives) is a tool used mainly to find metadata and hidden information in the documents its scans. https://github.com/ElevenPaths/FOCA
 * **theHarvester** is a tool for gathering subdomain names, e-mail addresses, virtual
 hosts, open ports/ banners, and employee names from different public sources. https://github.com/laramies/theHarvester
