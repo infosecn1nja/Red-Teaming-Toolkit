@@ -93,6 +93,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **The Backdoor Factory (BDF)** is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state. https://github.com/secretsquirrel/the-backdoor-factory
 * **MacroShop** a collection of scripts to aid in delivering payloads via Office Macros. https://github.com/khr0x40sh/MacroShop
 * **UnmanagedPowerShell** Executes PowerShell from an unmanaged process. https://github.com/leechristensen/UnmanagedPowerShell
+* **evil-ssdp** Spoof SSDP replies to phish for NTLM hashes on a network. Creates a fake UPNP device, tricking users into visiting a malicious phishing page. https://gitlab.com/initstring/evil-ssdp
 
 ## Delivery
 ### Phishing
