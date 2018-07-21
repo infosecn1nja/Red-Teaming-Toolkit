@@ -12,7 +12,7 @@ ________________________________________________________________________________
 * [Command and Control](#command-and-control)
 * [Lateral Movement](#lateral-movement)
 * [Establish Foothold](#establish-foothold)
-* [Escalate Privileges](#establish-foothold)
+* [Escalate Privileges](#escalate-privileges)
 * [Data Exfiltration](#data-exfiltration)
 * [Misc](#misc)
 * [References](#references)
