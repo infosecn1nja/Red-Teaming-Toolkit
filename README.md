@@ -202,6 +202,7 @@ https://github.com/HarmJ0y/DAMP
 * **Grouper** a PowerShell script for helping to find vulnerable settings in AD Group Policy.
 https://github.com/l0ss/Grouper
 * **ADRecon** is a tool which extracts various artifacts (as highlighted below) out of an AD environment in a specially formatted Microsoft Excel report that includes summary views with metrics to facilitate analysis. https://github.com/sense-of-security/ADRecon
+* **ADACLScanner** one script for ACL's in Active Directory. https://github.com/canix1/ADACLScanner
 
 ### Local Escalation
 * **UACMe** is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system. https://github.com/hfiref0x/UACME
