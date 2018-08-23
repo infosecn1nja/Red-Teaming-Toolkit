@@ -27,6 +27,7 @@ ________________________________________________________________________________
 * **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon
 
 ### Passive Intelligence Gathering
+* **Social Mapper** OSINT Social Media Mapping Tool, takes a list of names & images (or LinkedIn company name) and performs automated target searching on a huge scale across multiple social media sites. Not restricted by APIs as it instruments a browser using Selenium. Outputs reports to aid in correlating targets across sites. https://github.com/SpiderLabs/social_mapper
 * **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
 * **ScrapedIn** a tool to scrape LinkedIn without API restrictions for data reconnaissance. https://github.com/dchrastil/ScrapedIn
 * **linkScrape** A LinkedIn user/company enumeration tool. https://github.com/NickSanzotta/linkScrape
