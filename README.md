@@ -131,6 +131,9 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Quasar** is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you. https://github.com/quasar/QuasarRAT
 
 ### Staging
+* **Rapid Attack Infrastructure (RAI)** Red Team Infrastructure... Quick... Fast... Simplified
+One of the most tedious phases of a Red Team Operation is usually the infrastructure setup. This usually entails
+a teamserver or controller, domains, redirectors, and a Phishing server. https://github.com/obscuritylabs/RAI
 * **Red Baron** is a set of modules and custom/third-party providers for Terraform which tries to automate creating resilient, disposable, secure and agile infrastructure for Red Teams. https://github.com/byt3bl33d3r/Red-Baron
 * **EvilURL** generate unicode evil domains for IDN Homograph Attack and detect them. https://github.com/UndeadSec/EvilURL
 * **Domain Hunter** checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names. https://github.com/threatexpress/domainhunter
