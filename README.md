@@ -41,6 +41,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **typofinder** a finder of domain typos showing country of IP address. https://github.com/nccgroup/typofinder
 * **pwnedOrNot** is a python script which checks if the email account has been compromised in a data breach, if the email account is compromised it proceeds to find passwords for the compromised account. https://github.com/thewhiteh4t/pwnedOrNot
 * **GitHarvester** This tool is used for harvesting information from GitHub like google dork. https://github.com/metac0rtex/GitHarvester
+* **pwndb** is a python command-line tool for searching leaked credentials using the Onion service with the same name. https://github.com/davidtavarez/pwndb/
 
 ### Frameworks
 * **Maltego** is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. https://www.paterva.com/web7/downloads.php
@@ -154,6 +155,8 @@ a teamserver or controller, domains, redirectors, and a Phishing server. https:/
 * **cs2modrewrite** a tools for convert Cobalt Strike profiles to modrewrite scripts. https://github.com/threatexpress/cs2modrewrite
 * **e2modrewrite** a tools for convert Empire profiles to Apache modrewrite scripts. https://github.com/infosecn1nja/e2modrewrite
 * **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
+* **cat-sites** Library of sites for categorization. https://github.com/audrummer15/cat-sites
+* **now-you-see-me** Pass-thru web server for traffic redirection. https://github.com/audrummer15/now-you-see-me
 * **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
 * **Automated Empire Infrastructure** https://github.com/bneg/RedTeam-Automation
