@@ -135,6 +135,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Quasar** is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you. https://github.com/quasar/QuasarRAT
 * **Covenant** is a .NET command and control framework that aims to highlight the attack surface of .NET, make the use of offensive .NET tradecraft easier, and serve as a collaborative command and control platform for red teamers. https://github.com/cobbr/Covenant
 * **FactionC2** is a C2 framework which use websockets based API that allows for interacting with agents and transports. https://github.com/FactionC2/
+* **DNScat2** is a tool is designed to create an encrypted command-and-control (C&C) channel over the DNS protocol. https://github.com/iagox86/dnscat2
 
 ### Staging
 * **Rapid Attack Infrastructure (RAI)** Red Team Infrastructure... Quick... Fast... Simplified
