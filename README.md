@@ -116,6 +116,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Phishing Frenzy** Ruby on Rails Phishing Framework. https://github.com/pentestgeek/phishing-frenzy
 * **Phishing Pretexts** a library of pretexts to use on offensive phishing engagements. https://github.com/L4bF0x/PhishingPretexts
 * **Modlishka** is a flexible and powerful reverse proxy, that will take your ethical phishing campaigns to the next level. https://github.com/drk1wi/Modlishka
+* **Evilginx** is a man-in-the-middle attack framework used for phishing credentials and session cookies of any web service. https://github.com/kgretzky/evilginx
 
 ### Watering Hole Attack
 * **BeEF** is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. https://github.com/beefproject/beef
@@ -255,9 +256,16 @@ https://github.com/l0ss/Grouper
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
 
 ## Misc
+### Adversary Simulation
+* **MITRE CALDERA** - An automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks. https://github.com/mitre/caldera
+* **APTSimulator** - A Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised. https://github.com/NextronSystems/APTSimulator
+* **Atomic Red Team** - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework. https://github.com/redcanaryco/atomic-red-team
+* **Network Flight Simulator** - flightsim is a lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility. https://github.com/alphasoc/flightsim
+* **Metta** - A security preparedness tool to do adversarial simulation. https://github.com/uber-common/metta
+* **Red Team Automation (RTA)** - RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&CK. https://github.com/endgameinc/RTA
+
 ### Wireless Networks
 * **Wifiphisher** is a security tool that performs Wi-Fi automatic association attacks to force wireless clients to unknowingly connect to an attacker-controlled Access Point. https://github.com/wifiphisher/wifiphisher
-* **Evilginx** is a man-in-the-middle attack framework used for phishing credentials and session cookies of any web service. https://github.com/kgretzky/evilginx
 * **mana** toolkit for wifi rogue AP attacks and MitM. https://github.com/sensepost/mana
 
 ### Embedded & Peripheral Devices Hacking
@@ -306,6 +314,7 @@ https://github.com/whid-injector/WHID
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
   * https://github.com/360-A-Team/CobaltStrike-Toolset
+  * https://github.com/FortyNorthSecurity/AggressorAssessor
   
 * A collection scripts useful for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
