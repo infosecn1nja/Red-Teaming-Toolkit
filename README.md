@@ -315,6 +315,7 @@ https://github.com/whid-injector/WHID
   * https://github.com/001SPARTaN/aggressor_scripts
   * https://github.com/360-A-Team/CobaltStrike-Toolset
   * https://github.com/FortyNorthSecurity/AggressorAssessor
+  * https://github.com/ramen0x3f/AggressorScripts
   
 * A collection scripts useful for red teaming and pentesting
   * https://github.com/FuzzySecurity/PowerShell-Suite
