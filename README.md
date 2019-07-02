@@ -138,6 +138,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **FactionC2** is a C2 framework which use websockets based API that allows for interacting with agents and transports. https://github.com/FactionC2/
 * **DNScat2** is a tool is designed to create an encrypted command-and-control (C&C) channel over the DNS protocol. https://github.com/iagox86/dnscat2
 * **Sliver** is a general purpose cross-platform implant framework that supports C2 over Mutual-TLS, HTTP(S), and DNS. https://github.com/BishopFox/sliver
+* **EvilOSX** An evil RAT (Remote Administration Tool) for macOS / OS X. https://github.com/Marten4n6/EvilOSX
+* **EggShell** is a post exploitation surveillance tool written in Python. It gives you a command line session with extra functionality between you and a target machine. https://github.com/neoneggplant/EggShell
 
 ### Staging
 * **Rapid Attack Infrastructure (RAI)** Red Team Infrastructure... Quick... Fast... Simplified
@@ -174,6 +176,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **RedFile** a flask wsgi application that serves files with intelligence, good for serving conditional RedTeam payloads. https://github.com/outflanknl/RedFile
 * **keyserver** Easily serve HTTP and DNS keys for proper payload protection. https://github.com/leoloobeek/keyserver
 * **DoHC2** allows the ExternalC2 library from Ryan Hanson (https://github.com/ryhanson/ExternalC2) to be leveraged for command and control (C2) via DNS over HTTPS (DoH). This is built for the popular Adversary Simulation and Red Team Operations Software Cobalt Strike (https://www.cobaltstrike.com). https://github.com/SpiderLabs/DoHC2
+* **HTran** is a connection bouncer, a kind of proxy server. A “listener” program is hacked stealthily onto an unsuspecting host anywhere on the Internet. https://github.com/HiwinCN/HTran
 
 ## Lateral Movement
 * **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
@@ -209,6 +212,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **Invoke-PowerThIEf** an Internet Explorer Post Exploitation library. https://github.com/nettitude/Invoke-PowerThIEf
 * **RedSnarf** is a pen-testing / red-teaming tool for Windows environments. https://github.com/nccgroup/redsnarf
 * **HoneypotBuster** Microsoft PowerShell module designed for red teams that can be used to find honeypots and honeytokens in the network or at the host. https://github.com/JavelinNetworks/HoneypotBuster
+* **PAExec** lets you launch Windows programs on remote Windows computers without needing to install software on the remote computer first. https://www.poweradmin.com/paexec/
 
 ## Establish Foothold
 * **Tunna** is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments. https://github.com/SECFORCE/Tunna
