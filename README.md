@@ -106,6 +106,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **make-pdf-embedded** a tool to create a PDF document with an embedded file. https://github.com/DidierStevens/DidierStevensSuite/blob/master/make-pdf-embedded.py
 * **avet** (AntiVirusEvasionTool) is targeting windows machines with executable files using different evasion techniques. https://github.com/govolution/avet
 * **EvilClippy** A cross-platform assistant for creating malicious MS Office documents. Can hide VBA macros, stomp VBA code (via P-Code) and confuse macro analysis tools. Runs on Linux, OSX and Windows. https://github.com/outflanknl/EvilClippy
+* **CallObfuscator** Obfuscate windows apis from static analysis tools and debuggers. https://github.com/d35ha/CallObfuscator
+* **Donut** is a shellcode generation tool that creates position-independant shellcode payloads from .NET Assemblies. This shellcode may be used to inject the Assembly into arbitrary Windows processes. https://github.com/TheWover/donut
 
 ## Delivery
 ### Phishing
@@ -283,6 +285,7 @@ https://github.com/l0ss/Grouper
 * **poisontap** exploits locked/password protected computers over USB, drops persistent WebSocket-based backdoor, exposes internal router, and siphons cookies using Raspberry Pi Zero & Node.js. https://github.com/samyk/poisontap
 * **WHID** WiFi HID Injector - An USB Rubberducky / BadUSB On Steroids.
 https://github.com/whid-injector/WHID
+* **PhanTap** is an ‘invisible’ network tap aimed at red teams. With limited physical access to a target building, this tap can be installed inline between a network device and the corporate network. https://github.com/nccgroup/phantap
 
 ### Software For Team Communication
 * **RocketChat** is free, unlimited and open source. Replace email & Slack with the ultimate team chat software solution. https://rocket.chat
@@ -293,6 +296,7 @@ https://github.com/whid-injector/WHID
 * **CobaltSplunk** Splunk Dashboard for CobaltStrike logs. https://github.com/vysec/CobaltSplunk
 * **Red Team Telemetry** A collection of scripts and configurations to enable centralized logging of red team infrastructure. https://github.com/ztgrace/red_team_telemetry
 * **Elastic for Red Teaming** Repository of resources for configuring a Red Team SIEM using Elastic. https://github.com/SecurityRiskAdvisors/RedTeamSIEM
+* **Ghostwriter** is a Django project written in Python 3.7 and is designed to be used by a team of operators. https://github.com/GhostManager/Ghostwriter
 
 ### C# Offensive Framework
 * **SharpSploit** is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers. https://github.com/cobbr/SharpSploit
