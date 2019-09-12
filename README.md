@@ -26,7 +26,6 @@ ________________________________________________________________________________
 * **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
 * **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon
 * **dirsearch** is a simple command line tool designed to brute force directories and files in websites. https://github.com/maurosoria/dirsearch
-* **findomain** is a fast domain enumeration tool that uses Certificate Transparency logs and a selection of APIs. https://github.com/Edu4rdSHL/findomain
 
 ### Passive Intelligence Gathering
 * **Social Mapper** OSINT Social Media Mapping Tool, takes a list of names & images (or LinkedIn company name) and performs automated target searching on a huge scale across multiple social media sites. Not restricted by APIs as it instruments a browser using Selenium. Outputs reports to aid in correlating targets across sites. https://github.com/SpiderLabs/social_mapper
@@ -44,6 +43,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **GitHarvester** This tool is used for harvesting information from GitHub like google dork. https://github.com/metac0rtex/GitHarvester
 * **pwndb** is a python command-line tool for searching leaked credentials using the Onion service with the same name. https://github.com/davidtavarez/pwndb/
 * **CrossLinked** LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping. https://github.com/m8r0wn/CrossLinked
+* **findomain** is a fast domain enumeration tool that uses Certificate Transparency logs and a selection of APIs. https://github.com/Edu4rdSHL/findomain
 
 ### Frameworks
 * **Maltego** is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. https://www.paterva.com/web7/downloads.php
