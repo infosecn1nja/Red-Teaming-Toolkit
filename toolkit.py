@@ -190,10 +190,10 @@ def interact(tools):
         show_tool_info(tool_name, tools)
 
     def help():
-        print('search <case insensitive query>, e.g.: search dns')
-        print('download <tool name>, e.g.: download SharpSploit')
-        print('download DOWNLOAD_ALL')
-        print('show <tool name>, e.g.: show SharpSploit')
+        print('search <case insensitive query> "search dns"')
+        print('download <tool name> "download SharpSploit"')
+        print('"download DOWNLOAD_ALL"')
+        print('show <tool name> "show SharpSploit"')
 
     while True:
         command = input(prefix)
