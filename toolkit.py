@@ -7,6 +7,45 @@ from pathlib import Path
 from git.repo.base import Repo
 
 
+class colors:
+    BLACK = "\u001b[30m"
+    PALE_RED = "\u001b[31m"
+    PALE_GREEN = "\u001b[32m"
+    PALE_YELLOW = "\u001b[33m"
+    PALE_BLUE = "\u001b[34m"
+    PALE_MAGENTA = "\u001b[35m"
+    PALE_CYAN = "\u001b[36m"
+
+    GRAY = "\u001b[90m"
+    RED = "\u001b[91m"
+    GREEN = "\u001b[92m"
+    YELLOW = "\u001b[93m"
+    BLUE = "\u001b[94m"
+    MAGENTA = "\u001b[95m"
+    CYAN = "\u001b[96m"
+    WHITE = "\u001b[97m"
+
+    BG_GRAY = "\u001b[100m"
+    BG_RED = "\u001b[41m"
+    BG_GREEN = "\u001b[42m"
+    BG_YELLOW = "\u001b[43m"
+    BG_BLUE = "\u001b[44m"
+    BG_MAGENTA = "\u001b[45m"
+    BG_CYAN = "\u001b[46m"
+    BG_WHITE = "\u001b[47m"
+
+    BOLD = "\u001b[1m"
+    RESET = "\u001b[0m"
+
+    @staticmethod
+    def colored(text, color=WHITE):
+        return f"{color}{text}{colors.RESET}"
+
+    @staticmethod
+    def print_colored(text, color=WHITE):
+        print(colors.colored(text, color))
+
+
 def get_arguments():
     parser = ArgumentParser()
     parser.add_argument('--search', dest='search', required=False,
@@ -86,8 +125,9 @@ class Tool:
             os.rmdir(self.path)
 
     def printout(self, verbose=False):
-        print(self.name + ' // ' + self.category['name'])
-        print('DOWNLOADED' if self.is_downloaded() else 'NOT_DOWNLOADED')
+        colors.print_colored(self.name + ' // ' + self.category['name'],
+                             colors.RED)
+        colors.print_colored('DOWNLOADED' if self.is_downloaded() else 'NOT_DOWNLOADED', colors.BOLD)
         print(self.url)
         print(self.description)
         if verbose:
@@ -148,10 +188,10 @@ def interact(tools):
         show_tool_info(tool_name, tools)
 
     def help():
-        print('search <case insensitive query>')
-        print('download <tool name>')
+        print('search <case insensitive query>, e.g.: search dns')
+        print('download <tool name>, e.g.: download SharpSploit')
         print('download DOWNLOAD_ALL')
-        print('show <tool name>')
+        print('show <tool name>, e.g.: show SharpSploit')
 
     while True:
         command = input(prefix)
@@ -177,7 +217,7 @@ def search_in_tools(search, tools):
     logging.info("%s tools found", len(matched_tools))
     for tool in matched_tools:
         tool.printout()
-        print('*' * 60)
+        colors.print_colored('*' * 60, colors.BOLD)
 
 
 readme = 'README.md'
@@ -187,7 +227,7 @@ tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
 categories = set([t.category['alias'] for t in tools])
 
-logging.info('## Red-Teaming-Toolkit initialized')
+logging.info(colors.colored('## Red-Teaming-Toolkit initialized', colors.RED))
 logging.info('%s categories discovered', len(categories))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
