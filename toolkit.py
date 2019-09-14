@@ -16,8 +16,7 @@ def get_arguments():
                              'directory. Pass DOWNLOAD_ALL to download everything.')
     parser.add_argument('--show', dest='show', required=False,
                         help='Optional. Show details about the given tool. If a tool has a readme file then it will '
-                             'be printed to '
-                             'stdout.')
+                             'be printed to stdout.')
     parser.add_argument('--logging', dest='logging', choices=['INFO', 'DEBUG', 'WARNING', 'ERROR'], default='INFO',
                         help='Optional. Logging level.')
     options = parser.parse_args()
@@ -145,7 +144,8 @@ def interact(tools):
         download_tool(tool_name, tools)
 
     def show(command, tools):
-        show_tool_info(command.split(' ')[1], tools)
+        tool_name = command.split(' ')[1]
+        show_tool_info(tool_name, tools)
 
     def help():
         print('search <case insensitive query>')
@@ -186,13 +186,12 @@ scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
 categories = set([t.category['alias'] for t in tools])
-print(categories)
 
+logging.info('## Red-Teaming-Toolkit initialized')
 logging.info('%s categories discovered', len(categories))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
 logging.info('%s scripts synchronized', len(scripts))
-logging.info('## Red-Teaming-Toolkit initialized')
 
 try:
     if options.search:
