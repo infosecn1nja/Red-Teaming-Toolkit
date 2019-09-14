@@ -83,6 +83,9 @@ def get_arguments():
                              'directory. Pass DOWNLOAD_ALL to download everything.')
     parser.add_argument('--show', dest='show', required=False,
                         help='Optional. Show details about the downloaded tool.')
+    parser.add_argument('--drop-deprecated', action='store_true', required=False,
+                        help='Optional. Define when the toolkit should clean up deprecated tools (a tool will be '
+                             'marked as deprecated when it doesn\'t stored anymore in the root README.md file)')
     parser.add_argument('--logging', dest='logging', choices=['INFO', 'DEBUG', 'WARNING', 'ERROR'], default='INFO',
                         help='Optional. Logging level.')
     options = parser.parse_args()
@@ -100,7 +103,6 @@ git_sources = [
     'github.com',
     'bitbucket.com'
 ]
-
 
 class Tool:
     @staticmethod
@@ -248,6 +250,30 @@ def print_categories(tools):
             colors.print_green(f'{category} - {entries} tool(s)')
 
 
+def mark_deprecated_tools(synchronized_tools, categories):
+    stored_tools_names = []
+    deprecated_tools_names = []
+    for category in categories:
+        if os.path.isdir(category):
+            for t in os.listdir('./' + category + '/'):
+                stored_tools_names.append(t)
+    for tool in stored_tools_names:
+        if not any(tool in sync_tool.name for sync_tool in synchronized_tools):
+            logging.warning(colors.yellow('{} has been marked as deprecated'.format(tool)))
+            deprecated_tools_names.append(tool)
+    return deprecated_tools_names
+
+
+def drop_deprecated_tools(deprecated_tools):
+    import shutil
+    for tool_name in deprecated_tools:
+        for dir in [dir[0] for dir in os.walk(Path(os.getcwd()))]:
+            if tool_name in dir:
+                shutil.rmtree(Path(str(dir).split(tool_name)[0] + tool_name))
+                logging.info(colors.green('{} tool has been deleted'.format(tool_name)))
+
+
+
 def search_in_tools(search, tools):
     logging.info('Searching for %s', search)
     matched_tools = []
@@ -270,9 +296,16 @@ readme = 'README.md'
 scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
+categories = set([t.category['alias'] for t in tools])
+
+# check for the deprecated tools
+deprecated_tools = mark_deprecated_tools(tools, categories)
+
+if options.drop_deprecated:
+    drop_deprecated_tools(deprecated_tools)
 
 logging.info(colors.green('## Red-Teaming-Toolkit initialized'))
-logging.info('%s categories discovered', len(set([t.category['alias'] for t in tools])))
+logging.info('%s categories discovered', len(categories))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
 logging.info('%s scripts synchronized', len(scripts))
