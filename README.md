@@ -78,11 +78,9 @@ ________________________________________________________________________________
 * **SharpShooter** is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. https://github.com/mdsecactivebreach/SharpShooter
 * **Don't kill my cat** is a tool that generates obfuscated shellcode that is stored inside of polyglot images. The image is 100% valid and also 100% valid shellcode. https://github.com/Mr-Un1k0d3r/DKMC
 * **Malicious Macro Generator Utility** Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism. https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator
-* **SCT Obfuscator** Cobalt Strike SCT payload obfuscator. https://github.com/Mr-Un1k0d3r/SCT-obfuscator
 * **Invoke-Obfuscation** PowerShell Obfuscator. https://github.com/danielbohannon/Invoke-Obfuscation
 * **Invoke-CradleCrafter** PowerShell remote download cradle generator and obfuscator. https://github.com/danielbohannon/Invoke-CradleCrafter
 * **Invoke-DOSfuscation** cmd.exe Command Obfuscation Generator & Detection Test Harness. https://github.com/danielbohannon/Invoke-DOSfuscation
-* **morphHTA** Morphing Cobalt Strike's evil.HTA. https://github.com/vysec/morphHTA
 * **Unicorn** is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. https://github.com/trustedsec/unicorn
 * **EmbedInHTML** Embed and hide any file in an HTML file. https://github.com/Arno0x/EmbedInHTML
 * **SigThief** Stealing Signatures and Making One Invalid Signature at a Time. https://github.com/secretsquirrel/SigThief
@@ -161,19 +159,13 @@ ________________________________________________________________________________
 * **Domain Hunter** checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names. https://github.com/threatexpress/domainhunter
 * **PowerDNS** is a simple proof of concept to demonstrate the execution of PowerShell script using DNS only. https://github.com/mdsecactivebreach/PowerDNS
 * **Chameleon** a tool for evading Proxy categorisation. https://github.com/mdsecactivebreach/Chameleon
-* **CatMyFish** Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C. https://github.com/Mr-Un1k0d3r/CatMyFish
 * **Malleable C2** is a domain specific language to redefine indicators in Beacon's communication. https://github.com/rsmudge/Malleable-C2-Profiles
-* **Malleable-C2-Randomizer** This script randomizes Cobalt Strike Malleable C2 profiles through the use of a metalanguage, hopefully reducing the chances of flagging signature-based detection controls. https://github.com/bluscreenofjeff/Malleable-C2-Randomizer
 * **FindFrontableDomains** search for potential frontable domains. https://github.com/rvrsh3ll/FindFrontableDomains
 * **Postfix-Server-Setup** Setting up a phishing server is a very long and tedious process. It can take hours to setup, and can be compromised in minutes. https://github.com/n0pe-sled/Postfix-Server-Setup
 * **DomainFrontingLists** a list of Domain Frontable Domains by CDN. https://github.com/vysec/DomainFrontingLists
 * **Apache2-Mod-Rewrite-Setup** Quickly Implement Mod-Rewrite in your infastructure. https://github.com/n0pe-sled/Apache2-Mod-Rewrite-Setup
 * **mod_rewrite rule** to evade vendor sandboxes. https://gist.github.com/curi0usJack/971385e8334e189d93a6cb4671238b10
-* **external_c2 framework** a python framework for usage with Cobalt Strike's External C2. https://github.com/Und3rf10w/external_c2_framework
-* **ExternalC2** a library for integrating communication channels with the Cobalt Strike External C2 server. https://github.com/ryhanson/ExternalC2
-* **cs2modrewrite** a tools for convert Cobalt Strike profiles to modrewrite scripts. https://github.com/threatexpress/cs2modrewrite
 * **e2modrewrite** a tools for convert Empire profiles to Apache modrewrite scripts. https://github.com/infosecn1nja/e2modrewrite
-* **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
 * **cat-sites** Library of sites for categorization. https://github.com/audrummer15/cat-sites
 * **ycsm** is a quick script installation for resilient redirector using nginx reverse proxy and letsencrypt compatible with some popular Post-Ex Tools (Cobalt Strike, Empire, Metasploit, PoshC2). https://github.com/infosecn1nja/ycsm
 * **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
@@ -190,7 +182,6 @@ ________________________________________________________________________________
 * **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
 * **PowerLessShell** rely on MSBuild.exe to remotely execute PowerShell scripts and commands without spawning powershell.exe. https://github.com/Mr-Un1k0d3r/PowerLessShell
 * **GoFetch** is a tool to automatically exercise an attack plan generated by the BloodHound application. https://github.com/GoFetchAD/GoFetch
-* **ANGRYPUPPY** a bloodhound attack path automation in CobaltStrike. https://github.com/vysec/ANGRYPUPPY
 * **DeathStar** is a Python script that uses Empire's RESTful API to automate gaining Domain Admin rights in Active Directory environments using a variety of techinques. https://github.com/byt3bl33d3r/DeathStar
 * **SharpHound** C# Rewrite of the BloodHound Ingestor. https://github.com/BloodHoundAD/SharpHound
 * **BloodHound.py** is a Python based ingestor for BloodHound, based on Impacket. https://github.com/fox-it/BloodHound.py
@@ -296,7 +287,6 @@ ________________________________________________________________________________
 
 ### Log Aggregation
 * **RedELK** Red Team's SIEM - easy deployable tool for Red Teams used for tracking and alarming about Blue Team activities as well as better usability in long term operations. https://github.com/outflanknl/RedELK/
-* **CobaltSplunk** Splunk Dashboard for CobaltStrike logs. https://github.com/vysec/CobaltSplunk
 * **Red Team Telemetry** A collection of scripts and configurations to enable centralized logging of red team infrastructure. https://github.com/ztgrace/red_team_telemetry
 * **Elastic for Red Teaming** Repository of resources for configuring a Red Team SIEM using Elastic. https://github.com/SecurityRiskAdvisors/RedTeamSIEM
 * **Ghostwriter** is a Django project written in Python 3.7 and is designed to be used by a team of operators. https://github.com/GhostManager/Ghostwriter
@@ -324,7 +314,6 @@ ________________________________________________________________________________
   * https://github.com/RhinoSecurityLabs/Aggressor-Scripts
   * https://github.com/bluscreenofjeff/AggressorScripts
   * https://github.com/001SPARTaN/aggressor_scripts
-  * https://github.com/360-A-Team/CobaltStrike-Toolset
   * https://github.com/FortyNorthSecurity/AggressorAssessor
   * https://github.com/ramen0x3f/AggressorScripts
   * https://github.com/FuzzySecurity/PowerShell-Suite

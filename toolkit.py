@@ -162,7 +162,7 @@ class Tool:
 
     def update(self):
         if not self.is_downloaded():
-            logging.error(colors.red('{} is not downloaded'.format(self.name)))
+            logging.debug(colors.red('{} is not downloaded'.format(self.name)))
             return
         try:
             Repo(self.path).remote().pull()
@@ -179,7 +179,6 @@ class Tool:
         if verbose:
             if self.tool_readme:
                 print(self.tool_readme)
-
 
 def download_tool(tool_name, tools):
     for tool in tools:
@@ -247,6 +246,7 @@ def interact(tools):
     def help():
         print('search <case insensitive query> "search dns"')
         print('download <tool name> "download SharpSploit"/"download DOWNLOAD_ALL"')
+        print('update <tool name> "update SharpSploit"/"update DOWNLOAD_ALL"')
         print('show <tool name> "show SharpSploit"')
 
     while True:
@@ -287,7 +287,8 @@ def mark_deprecated_tools(synchronized_tools, categories):
     for category in categories:
         if os.path.isdir(category):
             for t in os.listdir('./' + category + '/'):
-                stored_tools_names.append(t)
+                if t.replace('\n', '').strip() != '':
+                    stored_tools_names.append(t)
     for tool in stored_tools_names:
         if not any(tool in sync_tool.name for sync_tool in synchronized_tools):
             logging.warning(colors.yellow('{} has been marked as deprecated'.format(tool)))
