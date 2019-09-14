@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
+import logging
 import os
+from argparse import ArgumentParser
 from pathlib import Path
+
+from git.repo.base import Repo
 
 
 def get_arguments():
-    from argparse import ArgumentParser
-
     parser = ArgumentParser()
     parser.add_argument('--search', dest='search', required=False,
                         help='Optional. A query to search within the toolkit.')
@@ -17,16 +19,29 @@ def get_arguments():
     return options
 
 
-options = get_arguments()
-
-import logging
-
 logging.basicConfig(format='[%(asctime)s %(levelname)s]: %(message)s',
                     datefmt='%m/%d/%Y %I:%M:%S %p',
                     level='INFO')
 
+trusted_sources = [
+    'github.com',
+    'bitbucket.com'
+]
+
 
 class Tool:
+    @staticmethod
+    def find_category(url, readme_file):
+        with open(readme_file, 'r') as file:
+            sections = file.read().split('## ')
+            for sec in sections:
+                if url in sec:
+                    category = sec.split('\n')[0]
+                    return {
+                        'name': category,
+                        'alias': category.lower().replace(' ', '-')
+                    }
+
     def __init__(self, line):
         assert line and line.strip() != ''
         self.name = line.split('**')[1].split('**')[0]
@@ -34,26 +49,18 @@ class Tool:
         self.url = 'http' + line.split('http')[1]
         self.category = None
 
-    def is_tool_downloaded(self):
+    def is_downloaded(self):
         path = os.getcwd() + '/' + self.category['alias'] + '/' + self.name
         return os.path.exists(path) and os.listdir(path)
 
-    def find_category(self, readme_file):
-        with open(readme_file, 'r') as file:
-            sections = file.read().split('## ')
-            for sec in sections:
-                if self.url in sec:
-                    category = sec.split('\n')[0]
-                    self.category = {
-                        'name': category,
-                        'alias': category.lower().replace(' ', '-')
-                    }
-
     def download(self):
-        if self.is_tool_downloaded():
+        if self.is_downloaded():
             logging.info('%s is already downloaded', self.name)
             return
-        from git.repo.base import Repo
+        if not any(host in self.url for host in trusted_sources):
+            logging.warning('Skipping %s / %s downloading, as it doesn\'t look like a git repository', self.name,
+                            self.url)
+            return
 
         logging.info('Downloading %s', self.name)
         path = Path(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
@@ -65,7 +72,7 @@ class Tool:
 
     def printout(self):
         print(self.name + ' // ' + self.category['name'])
-        print('DONWLOADED' if self.is_tool_downloaded() else 'NOT_DOWNLOADED')
+        print('DONWLOADED' if self.is_downloaded() else 'NOT_DOWNLOADED')
         print(self.url)
         print(self.description)
 
@@ -83,7 +90,7 @@ def get_tools_from_readme(readme_file):
         for line in lines:
             if line.startswith('* **'):
                 tool = Tool(line)
-                tool.find_category(readme_file)
+                tool.category = Tool.find_category(tool.url, readme_file)
                 tools.append(tool)
     return tools
 
@@ -126,16 +133,18 @@ def search_in_tools(search, tools):
         print('*' * 60)
 
 
+options = get_arguments()
+
 readme = 'README.md'
 
 scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
-downloaded_tools = [t for t in tools if t.is_tool_downloaded()]
+downloaded_tools = [t for t in tools if t.is_downloaded()]
 
 logging.info('## Red-Teaming-Toolkit initialized')
 logging.info('%s tools initialized', len(tools))
-logging.info('%s scripts initialized', len(scripts))
 logging.info('%s tools downloaded', len(downloaded_tools))
+logging.info('%s scripts initialized', len(scripts))
 
 try:
     if options.search:
