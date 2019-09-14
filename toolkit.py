@@ -224,6 +224,8 @@ def interact(tools):
 
     while True:
         command = input(prefix)
+        if command == 'exit':
+            exit(0)
         if command == 'help' or command == '?':
             help()
         if command.startswith('search '):
