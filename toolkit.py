@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
+import os
+from pathlib import Path
+
 
 def get_arguments():
     from argparse import ArgumentParser
 
     parser = ArgumentParser()
-    parser.add_argument('--interact', dest='interact', action='store_true', default=True,
-                        help='Optional. Interact with script console to search for the tools / scripts by the '
-                             'matching queries')
     parser.add_argument('--search', dest='search', required=False,
-                        help='Optional. A query to search for in tools name and description')
+                        help='Optional. A query to search within the toolkit.')
+    parser.add_argument('--download', dest='download', required=False,
+                        help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
+                             'directory.')
     options = parser.parse_args()
 
     return options
@@ -30,6 +33,11 @@ class Tool:
         self.description = line.split('**')[2].split('http')[0].strip()
         self.url = 'http' + line.split('http')[1]
         self.category = None
+        self.is_downloaded = False
+
+    def is_tool_downloaded(self):
+        self.is_downloaded = os.path.exists(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
+        return self.is_downloaded
 
     def find_category(self, readme_file):
         with open(readme_file, 'r') as file:
@@ -37,10 +45,25 @@ class Tool:
             for sec in sections:
                 if self.url in sec:
                     category = sec.split('\n')[0]
-                    self.category = {'name': category, 'alias': category.lower().replace(' ', '-')}
+                    self.category = {
+                        'name': category,
+                        'alias': category.lower().replace(' ', '-')
+                    }
+
+    def download(self):
+        if self.is_downloaded:
+            logging.info('%s is already downloaded', self.name)
+            return
+        from git.repo.base import Repo
+
+        logging.info('Downloading %s', self.name)
+        path = Path(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
+        path.mkdir(parents=True, exist_ok=True)
+        Repo.clone_from(self.url, path.name)
 
     def printout(self):
         print(self.name + ' // ' + self.category['name'])
+        print('DONWLOADED' if self.is_downloaded else 'NOT_DOWNLOADED')
         print(self.url)
         print(self.description)
 
@@ -65,6 +88,7 @@ def get_scripts_from_readme(readme_file):
             if line.startswith('  * '):
                 scripts_url.append(line.replace('  * ', ''))
     return scripts_url
+
 
 def interact(tools):
     prefix = 'toolkit:>> '
@@ -95,10 +119,14 @@ logging.info('%s tools loaded', len(tools))
 logging.info('%s scripts loaded', len(scripts))
 
 try:
-    if options.interact:
-        interact(tools)
-    elif options.search:
+    if options.search:
         search_in_tools(options.search, tools)
+    elif options.download:
+        for t in tools:
+            if t.name == options.download:
+                t.download()
+    else:
+        interact(tools)
 except KeyboardInterrupt:
     logging.info('Keyboard interrupt, exiting')
     exit(0)
