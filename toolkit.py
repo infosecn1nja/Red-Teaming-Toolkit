@@ -266,12 +266,13 @@ def mark_deprecated_tools(synchronized_tools, categories):
 
 def drop_deprecated_tools(deprecated_tools):
     import shutil
+
     for tool_name in deprecated_tools:
         for dir in [dir[0] for dir in os.walk(Path(os.getcwd()))]:
             if tool_name in dir:
                 shutil.rmtree(Path(str(dir).split(tool_name)[0] + tool_name))
                 logging.info(colors.green('{} tool has been deleted'.format(tool_name)))
-
+                break
 
 
 def search_in_tools(search, tools):
