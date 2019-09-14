@@ -127,7 +127,7 @@ class Tool:
         colors.print_colored(self.name + ' // ' + self.category['name'],
                              colors.RED)
         colors.print_colored(
-                    colors.colored('DOWNLOADED', colors.GREEN) if self.is_downloaded()
+                    colors.colored('DOWNLOADED - ' + str(self.path), colors.GREEN) if self.is_downloaded()
                     else colors.colored('NOT_DOWNLOADED', colors.MAGENTA),
                     colors.BOLD)
         print(self.url)
@@ -175,18 +175,18 @@ def get_scripts_from_readme(readme_file):
 
 
 def interact(tools):
-    prefix = colors.colored('red-teaming-toolkit:>> ', colors.BG_GRAY)
+    prefix = colors.colored('/red-teaming-toolkit:>> ', colors.BG_GRAY)
 
     def search(command, tools):
-        query = command.split(' ')[1]
+        query = command.replace('search ', '')
         search_in_tools(query, tools)
 
     def download(command, tools):
-        tool_name = command.split(' ')[1]
+        tool_name = command.replace('download ', '')
         download_tool(tool_name, tools)
 
     def show(command, tools):
-        tool_name = command.split(' ')[1]
+        tool_name = command.replace('show ', '')
         show_tool_info(tool_name, tools)
 
     def help():
@@ -210,7 +210,7 @@ def interact(tools):
 def print_categories(tools):
     categories = {}
     for tool in tools:
-        category = tool.category['alias']
+        category = tool.category['name']
         if category in categories:
             categories[category] += 1
         else:
@@ -220,7 +220,7 @@ def print_categories(tools):
                                    sorted(categories, key=categories.get, reverse=True)]
                                   ).items():
         if entries > 0:
-            colors.print_colored(f'{category} - {entries} tools', colors.GREEN)
+            colors.print_colored(f'{category} - {entries} tool(s)', colors.GREEN)
 
 
 def search_in_tools(search, tools):
@@ -229,17 +229,15 @@ def search_in_tools(search, tools):
     for tool in tools:
         pattern = search.lower()
         if pattern in tool.name.lower() \
-                    or pattern in tool.description.lower() \
-                    or (pattern in tool.tool_readme.lower() if tool.tool_readme else False):
+                    or pattern in tool.description.lower():
             matched_tools.append(tool)
     matched_tools_count = len(matched_tools)
     logging.info("%s tools found", matched_tools_count)
-
+    if matched_tools_count > 0:
+        print_categories(matched_tools)
     for tool in matched_tools:
         tool.printout()
         colors.print_colored('*' * 60, colors.BOLD)
-    if matched_tools_count > 0:
-        print_categories(matched_tools)
 
 
 readme = 'README.md'
