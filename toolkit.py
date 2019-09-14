@@ -180,6 +180,7 @@ class Tool:
             if self.tool_readme:
                 print(self.tool_readme)
 
+
 def download_tool(tool_name, tools):
     for tool in tools:
         if tool.name == tool_name or tool_name == 'DOWNLOAD_ALL':
@@ -246,7 +247,7 @@ def interact(tools):
     def help():
         print('search <case insensitive query> "search dns"')
         print('download <tool name> "download SharpSploit"/"download DOWNLOAD_ALL"')
-        print('update <tool name> "update SharpSploit"/"update DOWNLOAD_ALL"')
+        print('update <tool name> "update SharpSploit"/"update UPDATE_ALL"')
         print('show <tool name> "show SharpSploit"')
 
     while True:
