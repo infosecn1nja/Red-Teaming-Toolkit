@@ -38,6 +38,7 @@ ________________________________________________________________________________
 * **dirsearch** is a simple command line tool designed to brute force directories and files in websites. https://github.com/maurosoria/dirsearch
 
 ### Passive Intelligence Gathering
+* **shodan-eye** Shodan Eye This tool collects all the information about all devices directly connected to the internet using the specified keywords that you enter. https://github.com/BullsEye0/shodan-eye
 * **userrecon-py** Find usernames in **187** social networks. https://github.com/decoxviii/userrecon-py
 * **sherlock-js** Node-JS enumeration tool to find accounts in social networks by a given username. https://github.com/GitSquared/sherlock-js
 * **pymeta** Pymeta uses specially crafted search queries to identify and download the following file types (pdf, xls, xlsx, doc, docx, ppt, pptx) from a given domain using Google and Bing. https://github.com/m8r0wn/pymeta
