@@ -222,7 +222,7 @@ ________________________________________________________________________________
 * **nishang** Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing. https://github.com/samratashok/nishang
 
 ## Pivoting and Tunneling
-* **http-tunnel** A program to tunnel TCP connection through HTTP connection https://github.com/khuevu/http-tunnel
+* **http-tunnel** A program to tunnel TCP connection through HTTP connection. https://github.com/khuevu/http-tunnel
 * **microsocks** a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. https://github.com/derstolz/microsocks
 * **pyrexecd** PyRexecd is a standalone SSH server for Windows. https://github.com/euske/pyrexecd.git
 

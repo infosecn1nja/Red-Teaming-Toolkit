@@ -81,6 +81,9 @@ def get_arguments():
     parser.add_argument('--download', dest='download', required=False,
                         help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
                              'directory. Pass DOWNLOAD_ALL to download everything.')
+    parser.add_argument('--update', dest='update', required=False, help='Optional. Update a given tool. '
+                                                                        'Pass UPDATE_ALL to update all downloaded '
+                                                                        'tools')
     parser.add_argument('--show', dest='show', required=False,
                         help='Optional. Show details about the downloaded tool.')
     parser.add_argument('--drop-deprecated', action='store_true', required=False,
@@ -103,6 +106,7 @@ git_sources = [
     'github.com',
     'bitbucket.com'
 ]
+
 
 class Tool:
     @staticmethod
@@ -128,7 +132,8 @@ class Tool:
         assert line and line.strip() != ''
         self.name = line.split('**')[1].split('**')[0]
         self.description = line.split('**')[2].split('http')[0].strip()
-        self.url = 'http' + line.split('http')[1]
+        # self.url = 'http' + line.split('http')[1]
+        self.url = line.split(' ')[-1]
         self.category = self.find_category(self.url, file_content_as_string)
         self.path = Path(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
         self.tool_readme = self.fetch_tool_readme(str(self.path), self.name) if self.is_downloaded() else None
@@ -150,9 +155,20 @@ class Tool:
         self.path.mkdir(parents=True, exist_ok=True)
         try:
             Repo.clone_from(self.url, self.path)
+            logging.info(colors.green('{} has been downloaded'.format(self.name)))
         except Exception as e:
-            logging.error(colors.red('Downloading failed: ' + str(e)))
+            logging.error(colors.red('Download failed: ' + str(e)))
             os.rmdir(self.path)
+
+    def update(self):
+        if not self.is_downloaded():
+            logging.error(colors.red('{} is not downloaded'.format(self.name)))
+            return
+        try:
+            Repo(self.path).remote().pull()
+            logging.info(colors.green('{} has been updated'.format(self.name)))
+        except Exception as e:
+            logging.error(colors.red('Update failed: ' + str(e)))
 
     def printout(self, verbose=False):
         colors.print_red(colors.bold(self.name) + ' // ' + self.category['name'])
@@ -169,6 +185,13 @@ def download_tool(tool_name, tools):
     for tool in tools:
         if tool.name == tool_name or tool_name == 'DOWNLOAD_ALL':
             tool.download()
+
+
+def update_tool(tool_name, tools):
+    logging.info('Starting update of %s', tool_name)
+    for tool in tools:
+        if tool.name == tool_name or tool_name == 'UPDATE_ALL':
+            tool.update()
 
 
 def get_tools_from_readme(readme_file):
@@ -213,6 +236,10 @@ def interact(tools):
         tool_name = command.replace('download ', '')
         download_tool(tool_name, tools)
 
+    def update(command, tools):
+        tool_name = command.replace('update ', '')
+        update_tool(tool_name, tools)
+
     def show(command, tools):
         tool_name = command.replace('show ', '')
         show_tool_info(tool_name, tools)
@@ -234,6 +261,8 @@ def interact(tools):
             download(command, tools)
         if command.startswith('show '):
             show(command, tools)
+        if command.startswith('update '):
+            update(command, tools)
 
 
 def print_categories(tools):
@@ -316,6 +345,8 @@ logging.info('%s scripts synchronized', len(scripts))
 try:
     if options.search:
         search_in_tools(options.search, tools)
+    elif options.update:
+        update_tool(options.update, tools)
     elif options.download:
         download_tool(options.download, tools)
     elif options.show:
