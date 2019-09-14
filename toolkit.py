@@ -187,7 +187,7 @@ def show_tool_info(tool_name, tools):
             tool_found = True
             tool.printout(True)
     if not tool_found:
-        logging.error('Tool %s wasn\'t found', tool_name)
+        logging.error(colors.red('%s wasn\'t found in the toolkit context' % tool_name))
 
 
 def get_scripts_from_readme(readme_file):

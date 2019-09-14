@@ -21,6 +21,10 @@ ________________________________________________________________________________
 
 ## Reconnaissance
 ### Active Intelligence Gathering
+* **unhidens** Small DNS Recon utility, allows you to obtain some useful info about NS-servers placed behind relays, firewalls, etc. Requires 'dig' utility! https://github.com/german-namestnikov/unhidens
+* **knock** is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for **DNS zone transfer** and to try to bypass the **wildcard DNS record** automatically if it is enabled. Now knockpy supports queries to VirusTotal subdomains, you can setting the API_KEY within the config.json file. https://github.com/guelfoweb/knock.git
+* **subbrute** SubBrute is a community driven project with the goal of creating the fastest, and most accurate subdomain enumeration tool.  Some of the magic behind SubBrute is that it uses open resolvers as a kind of proxy to circumvent DNS rate-limiting.  This design also provides a layer of anonymity, as SubBrute does not send traffic directly to the target's name servers. https://github.com/infosec-au/subbrute
+* **subscraper** SubScraper uses DNS brute force, Google & Bing scraping, and Virus Total to enumerate subdomains. Written in Python3, SubScraper performs HTTP(S) requests and DNS "A" record lookups during the enumeration process to validate discovered subdomains. This provides further information to help prioritize targets and aid in potential next steps. Post-Enumeration, "CNAME" lookups are displayed to identify subdomain takeover opportunities. https://github.com/m8r0wn/subscraper
 * **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
 * **AWSBucketDump** is a tool to quickly enumerate AWS S3 buckets to look for loot. https://github.com/jordanpotti/AWSBucketDump
 * **AQUATONE** is a set of tools for performing reconnaissance on domain names. https://github.com/michenriksen/aquatone
@@ -47,6 +51,9 @@ ________________________________________________________________________________
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
 
 ## Weaponization
+* **Evil-Droid** Evil-Droid is a framework that create & generate & embed apk payload to penetrate android platforms. https://github.com/M4sc3r4n0/Evil-Droid
+* **TheFatRat** An Easy tool to Generate Backdoor for bypass AV and Easy Tool For Post exploitation attack like browser attack,dll . This tool compiles a malware with popular payload  and then the compiled malware can be execute on windows, android, mac . . https://github.com/Screetsec/TheFatRat
+* **Microsploit** a Simple tool and not very special but this tool fast and easy create backdoor office exploitation using module metasploit packet. Like Microsoft Office in windows or mac , Open Office in linux  , Macro attack , Buffer Overflow in word . Work in kali rolling , Parrot , Backbox .. https://github.com/Screetsec/Microsploit
 * **WinRAR Remote Code Execution** Proof of Concept exploit for CVE-2018-20250. https://github.com/WyAtu/CVE-2018-20250
 * **Composite Moniker** Proof of Concept exploit for CVE-2017-8570. https://github.com/rxwx/CVE-2017-8570
 * **Exploit toolkit CVE-2017-8759** is a handy python script which provides pentesters and security researchers a quick and effective way to test Microsoft .NET Framework RCE. https://github.com/bhdresh/CVE-2017-8759
@@ -134,6 +141,7 @@ ________________________________________________________________________________
 * **EggShell** is a post exploitation surveillance tool written in Python. It gives you a command line session with extra functionality between you and a target machine. https://github.com/neoneggplant/EggShell
 
 ### Staging
+* **Vegile** This tool will set up your backdoor/rootkits when backdoor is already setup it will be hidden, unlimited. Even when it is killed, it will re-run again. There will always be a procces which will run another process, so we can assume that this procces is unstopable like a Ghost in The Shell. https://github.com/Screetsec/Vegile
 * **Rapid Attack Infrastructure (RAI)** Red Team Infrastructure... Quick... Fast... Simplified <br/> One of the most tedious phases of a Red Team Operation is usually the infrastructure setup. This usually entails <br/>a teamserver or controller, domains, redirectors, and a Phishing server. https://github.com/obscuritylabs/RAI
 * **Red Baron** is a set of modules and custom/third-party providers for Terraform which tries to automate creating resilient, disposable, secure and agile infrastructure for Red Teams. https://github.com/byt3bl33d3r/Red-Baron
 * **EvilURL** generate unicode evil domains for IDN Homograph Attack and detect them. https://github.com/UndeadSec/EvilURL
@@ -201,10 +209,10 @@ ________________________________________________________________________________
 * **PAExec** lets you launch Windows programs on remote Windows computers without needing to install software on the remote computer first. https://www.poweradmin.com/paexec/
 
 ## Establish Foothold
+* **TinyShell** Web Shell Framework. https://github.com/threatexpress/tinyshell
 * **Tunna** is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments. https://github.com/SECFORCE/Tunna
 * **reGeorg** the successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn. https://github.com/sensepost/reGeorg
 * **Blade** is a webshell connection tool based on console, currently under development and aims to be a choice of replacement of Chooper. https://github.com/wonderqs/Blade
-* **TinyShell** Web Shell Framework. https://github.com/threatexpress/tinyshell
 * **PowerLurk** is a PowerShell toolset for building malicious WMI Event Subsriptions. https://github.com/Sw4mpf0x/PowerLurk
 * **DAMP** The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification. https://github.com/HarmJ0y/DAMP
 
