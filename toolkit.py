@@ -39,7 +39,7 @@ git_sources = [
 class Tool:
     @staticmethod
     def find_category(url, readme_file):
-        with open(readme_file, 'r') as file:
+        with open(readme_file, 'r', encoding='utf-8') as file:
             sections = file.read().split('## ')
             for sec in sections:
                 if url in sec:
@@ -54,7 +54,7 @@ class Tool:
         readme_path = str(tool_path) + '/README.md'
         if os.path.exists(readme_path):
             logging.debug('README.md file has been extracted for %s', tool_name)
-            return open(readme_path, 'r').read()
+            return open(readme_path, 'r', encoding='utf-8').read()
 
     def __init__(self, line, file_content_as_string):
         assert line and line.strip() != ''
@@ -103,7 +103,7 @@ def download_tool(tool_name, tools):
 
 def get_tools_from_readme(readme_file):
     tools = []
-    with open(readme_file, 'r') as file:
+    with open(readme_file, 'r', encoding='utf-8') as file:
         lines = [line.replace('\n', '') for line in file.readlines()]
         for line in lines:
             if line.startswith('* **'):
@@ -124,7 +124,7 @@ def show_tool_info(tool_name, tools):
 
 def get_scripts_from_readme(readme_file):
     scripts_url = []
-    with open(readme_file, 'r') as file:
+    with open(readme_file, 'r', encoding='utf-8') as file:
         file_content_as_string = [line.replace('\n', '') for line in file.readlines()]
         for line in file_content_as_string:
             if line.startswith('  * '):
