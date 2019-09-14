@@ -11,7 +11,7 @@ def get_arguments():
                         help='Optional. A query to search within the toolkit.')
     parser.add_argument('--download', dest='download', required=False,
                         help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
-                             'directory.')
+                             'directory. Pass DOWNLOAD_ALL to download everything.')
     options = parser.parse_args()
 
     return options
@@ -35,7 +35,8 @@ class Tool:
         self.category = None
 
     def is_tool_downloaded(self):
-        return os.path.exists(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
+        path = os.getcwd() + '/' + self.category['alias'] + '/' + self.name
+        return os.path.exists(path) and os.listdir(path)
 
     def find_category(self, readme_file):
         with open(readme_file, 'r') as file:
@@ -57,13 +58,22 @@ class Tool:
         logging.info('Downloading %s', self.name)
         path = Path(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
         path.mkdir(parents=True, exist_ok=True)
-        Repo.clone_from(self.url, path)
+        try:
+            Repo.clone_from(self.url, path)
+        except Exception as e:
+            logging.error('Downloading failed: %s', e)
 
     def printout(self):
         print(self.name + ' // ' + self.category['name'])
         print('DONWLOADED' if self.is_tool_downloaded() else 'NOT_DOWNLOADED')
         print(self.url)
         print(self.description)
+
+
+def download_tool(tool_name, tools):
+    for tool in tools:
+        if tool.name == tool_name or tool_name == 'DOWNLOAD_ALL':
+            tool.download()
 
 
 def get_tools_from_readme(readme_file):
@@ -95,14 +105,13 @@ def interact(tools):
         if command == 'help' or command == '?':
             print('search <case insensitive query>')
             print('download <tool name>')
+            print('download DOWNLOAD_ALL')
         if command.startswith('search '):
             query = command.split(' ')[1]
             search_in_tools(query, tools)
         if command.startswith('download '):
             tool_name = command.split(' ')[1]
-            for tool in tools:
-                if tool.name == tool_name:
-                    tool.download()
+            download_tool(tool_name, tools)
 
 
 def search_in_tools(search, tools):
@@ -132,9 +141,7 @@ try:
     if options.search:
         search_in_tools(options.search, tools)
     elif options.download:
-        for t in tools:
-            if t.name == options.download:
-                t.download()
+        download_tool(options.download, tools)
     else:
         interact(tools)
 except KeyboardInterrupt:
