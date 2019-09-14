@@ -14,16 +14,18 @@ def get_arguments():
     parser.add_argument('--download', dest='download', required=False,
                         help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
                              'directory. Pass DOWNLOAD_ALL to download everything.')
+    parser.add_argument('--logging', dest='logging', choices=['INFO', 'DEBUG', 'WARNING', 'ERROR'], default='INFO',
+                        help='Optional. Logging level.')
     options = parser.parse_args()
 
     return options
-
+options = get_arguments()
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s]: %(message)s',
                     datefmt='%m/%d/%Y %I:%M:%S %p',
-                    level='INFO')
+                    level=options.logging)
 
-trusted_sources = [
+git_sources = [
     'github.com',
     'bitbucket.com'
 ]
@@ -46,7 +48,7 @@ class Tool:
     def fetch_tool_readme(tool_path, tool_name):
         readme_path = str(tool_path) + '/README.md'
         if os.path.exists(readme_path):
-            logging.info('README.md file has been extracted for %s', tool_name)
+            logging.debug('README.md file has been extracted for %s', tool_name)
             return open(readme_path, 'r').read()
 
     def __init__(self, line, file_content_as_string):
@@ -65,7 +67,7 @@ class Tool:
         if self.is_downloaded():
             logging.info('%s is already downloaded', self.name)
             return
-        if not any(host in self.url for host in trusted_sources):
+        if not any(host in self.url for host in git_sources):
             logging.warning('Skipping %s / %s downloading, as it doesn\'t look like a git repository', self.name,
                             self.url)
             return
@@ -145,15 +147,13 @@ def search_in_tools(search, tools):
         pattern = search.lower()
         if pattern in tool.name.lower() \
                     or pattern in tool.description.lower() \
-                    or (pattern in tool.tool_readme if tool.tool_readme else False):
+                    or (pattern in tool.tool_readme.lower() if tool.tool_readme else False):
             matched_tools.append(tool)
     logging.info("%s tools found", len(matched_tools))
     for tool in matched_tools:
         tool.printout()
         print('*' * 60)
 
-
-options = get_arguments()
 
 readme = 'README.md'
 
