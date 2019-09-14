@@ -45,6 +45,34 @@ class colors:
     def print_colored(text, color=WHITE):
         print(colors.colored(text, color))
 
+    @staticmethod
+    def red(text):
+        return colors.colored(text, colors.RED)
+
+    @staticmethod
+    def green(text):
+        return colors.colored(text, colors.GREEN)
+
+    @staticmethod
+    def yellow(text):
+        return colors.colored(text, colors.YELLOW)
+
+    @staticmethod
+    def bold(text):
+        return colors.colored(text, colors.BOLD)
+
+    @staticmethod
+    def print_red(text):
+        colors.print_colored(text, colors.RED)
+
+    @staticmethod
+    def print_bold(text):
+        print(colors.bold(text))
+
+    @staticmethod
+    def print_green(text):
+        print(colors.green(text))
+
 
 def get_arguments():
     parser = ArgumentParser()
@@ -111,8 +139,9 @@ class Tool:
             logging.info('%s is already downloaded', self.name)
             return
         if not any(host in self.url for host in git_sources):
-            logging.warning('Skipping %s / %s downloading, as it doesn\'t look like a git repository', self.name,
-                            self.url)
+            logging.warning(colors.yellow(
+                        'Skipping {} / {} downloading, as it doesn\'t look like a git repository'.format(self.name,
+                                                                                                         self.url)))
             return
 
         logging.info('Downloading %s', self.name)
@@ -120,16 +149,13 @@ class Tool:
         try:
             Repo.clone_from(self.url, self.path)
         except Exception as e:
-            logging.error('Downloading failed: %s', e)
+            logging.error(colors.red('Downloading failed: ' + str(e)))
             os.rmdir(self.path)
 
     def printout(self, verbose=False):
-        colors.print_colored(self.name + ' // ' + self.category['name'],
-                             colors.RED)
-        colors.print_colored(
-                    colors.colored('DOWNLOADED - ' + str(self.path), colors.GREEN) if self.is_downloaded()
-                    else colors.colored('NOT_DOWNLOADED', colors.MAGENTA),
-                    colors.BOLD)
+        colors.print_red(colors.bold(self.name) + ' // ' + self.category['name'])
+        colors.print_bold(colors.green('DOWNLOADED - ' + colors.RESET + str(self.path)) if self.is_downloaded()
+                          else colors.colored('NOT_DOWNLOADED', colors.MAGENTA))
         print(self.url)
         print(self.description)
         if verbose:
@@ -191,8 +217,7 @@ def interact(tools):
 
     def help():
         print('search <case insensitive query> "search dns"')
-        print('download <tool name> "download SharpSploit"')
-        print('"download DOWNLOAD_ALL"')
+        print('download <tool name> "download SharpSploit"/"download DOWNLOAD_ALL"')
         print('show <tool name> "show SharpSploit"')
 
     while True:
@@ -215,12 +240,12 @@ def print_categories(tools):
             categories[category] += 1
         else:
             categories[category] = 1
-    colors.print_colored('Categories statistic:', colors.BOLD)
+    colors.print_bold('Categories statistic:')
     for category, entries in dict([(k, categories[k]) for k in
                                    sorted(categories, key=categories.get, reverse=True)]
                                   ).items():
         if entries > 0:
-            colors.print_colored(f'{category} - {entries} tool(s)', colors.GREEN)
+            colors.print_green(f'{category} - {entries} tool(s)')
 
 
 def search_in_tools(search, tools):
@@ -237,7 +262,7 @@ def search_in_tools(search, tools):
         print_categories(matched_tools)
     for tool in matched_tools:
         tool.printout()
-        colors.print_colored('*' * 60, colors.BOLD)
+        colors.print_bold('*' * 60)
 
 
 readme = 'README.md'
@@ -246,7 +271,7 @@ scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
 
-logging.info(colors.colored('## Red-Teaming-Toolkit initialized', colors.RED))
+logging.info(colors.green('## Red-Teaming-Toolkit initialized'))
 logging.info('%s categories discovered', len(set([t.category['alias'] for t in tools])))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
@@ -265,4 +290,4 @@ except KeyboardInterrupt:
     logging.info('Keyboard interrupt, exiting')
     exit(0)
 except Exception as e:
-    logging.error('Unexpected error: %s', e)
+    logging.error(colors.red('Unexpected error: ' + str(e)))
