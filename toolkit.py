@@ -54,8 +54,7 @@ def get_arguments():
                         help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
                              'directory. Pass DOWNLOAD_ALL to download everything.')
     parser.add_argument('--show', dest='show', required=False,
-                        help='Optional. Show details about the given tool. If a tool has a readme file then it will '
-                             'be printed to stdout.')
+                        help='Optional. Show details about the downloaded tool.')
     parser.add_argument('--logging', dest='logging', choices=['INFO', 'DEBUG', 'WARNING', 'ERROR'], default='INFO',
                         help='Optional. Logging level.')
     options = parser.parse_args()
@@ -127,7 +126,10 @@ class Tool:
     def printout(self, verbose=False):
         colors.print_colored(self.name + ' // ' + self.category['name'],
                              colors.RED)
-        colors.print_colored('DOWNLOADED' if self.is_downloaded() else 'NOT_DOWNLOADED', colors.BOLD)
+        colors.print_colored(
+                    colors.colored('DOWNLOADED', colors.GREEN) if self.is_downloaded()
+                    else colors.colored('NOT_DOWNLOADED', colors.MAGENTA),
+                    colors.BOLD)
         print(self.url)
         print(self.description)
         if verbose:
@@ -173,7 +175,7 @@ def get_scripts_from_readme(readme_file):
 
 
 def interact(tools):
-    prefix = 'red-teaming-toolkit:>> '
+    prefix = colors.colored('red-teaming-toolkit:>> ', colors.BG_GRAY)
 
     def search(command, tools):
         query = command.split(' ')[1]
@@ -205,6 +207,22 @@ def interact(tools):
             show(command, tools)
 
 
+def print_categories(tools):
+    categories = {}
+    for tool in tools:
+        category = tool.category['alias']
+        if category in categories:
+            categories[category] += 1
+        else:
+            categories[category] = 1
+    colors.print_colored('Categories statistic:', colors.BOLD)
+    for category, entries in dict([(k, categories[k]) for k in
+                                   sorted(categories, key=categories.get, reverse=True)]
+                                  ).items():
+        if entries > 0:
+            colors.print_colored(f'{category} - {entries} tools', colors.GREEN)
+
+
 def search_in_tools(search, tools):
     logging.info('Searching for %s', search)
     matched_tools = []
@@ -214,10 +232,14 @@ def search_in_tools(search, tools):
                     or pattern in tool.description.lower() \
                     or (pattern in tool.tool_readme.lower() if tool.tool_readme else False):
             matched_tools.append(tool)
-    logging.info("%s tools found", len(matched_tools))
+    matched_tools_count = len(matched_tools)
+    logging.info("%s tools found", matched_tools_count)
+
     for tool in matched_tools:
         tool.printout()
         colors.print_colored('*' * 60, colors.BOLD)
+    if matched_tools_count > 0:
+        print_categories(matched_tools)
 
 
 readme = 'README.md'
@@ -225,10 +247,9 @@ readme = 'README.md'
 scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
-categories = set([t.category['alias'] for t in tools])
 
 logging.info(colors.colored('## Red-Teaming-Toolkit initialized', colors.RED))
-logging.info('%s categories discovered', len(categories))
+logging.info('%s categories discovered', len(set([t.category['alias'] for t in tools])))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
 logging.info('%s scripts synchronized', len(scripts))
