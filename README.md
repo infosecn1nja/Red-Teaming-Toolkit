@@ -21,6 +21,10 @@ ________________________________________________________________________________
 
 ## Reconnaissance
 ### Active Intelligence Gathering
+* **Reconnoitre** A reconnaissance tool made for the OSCP labs to automate information gathering and service enumeration whilst creating a directory structure to store  results, findings and exploits used for each host, recommended commands to execute and directory structures for storing loot and flags. https://github.com/codingo/Reconnoitre
+* **sharesearch** ShareSearch tool goes through hosts with SMB, NFS, checking credentials, looking for interesting stuff and greping sensitive data in it. WARNING! Alfa version, a lot of bugs and spaghetti code. https://github.com/nikallass/sharesearch
+* **enumapis** Discovery of hidden API's through traversing web applications https://github.com/infosec-au/enumapis
+* **jsearch** Jsearch a simple script that grep infos from javascript files https://github.com/incogbyte/jsearch
 * **altdns** Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.https://github.com/urbanadventurer/altdns
 * **unhidens** Small DNS Recon utility, allows you to obtain some useful info about NS-servers placed behind relays, firewalls, etc. Requires 'dig' utility! https://github.com/german-namestnikov/unhidens
 * **knock** is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for **DNS zone transfer** and to try to bypass the **wildcard DNS record** automatically if it is enabled. Now knockpy supports queries to VirusTotal subdomains, you can setting the API_KEY within the config.json file. https://github.com/guelfoweb/knock.git
@@ -34,6 +38,11 @@ ________________________________________________________________________________
 * **dirsearch** is a simple command line tool designed to brute force directories and files in websites. https://github.com/maurosoria/dirsearch
 
 ### Passive Intelligence Gathering
+* **userrecon-py** Find usernames in **187** social networks. https://github.com/decoxviii/userrecon-py
+* **sherlock-js** Node-JS enumeration tool to find accounts in social networks by a given username. https://github.com/GitSquared/sherlock-js
+* **pymeta** Pymeta uses specially crafted search queries to identify and download the following file types (pdf, xls, xlsx, doc, docx, ppt, pptx) from a given domain using Google and Bing. https://github.com/m8r0wn/pymeta
+* **GoogleScraper** Scraping search engines professionally https://github.com/NikolaiT/GoogleScraper
+* **cloud_enum** Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud. https://github.com/initstring/cloud_enum
 * **Social Mapper** OSINT Social Media Mapping Tool, takes a list of names & images (or LinkedIn company name) and performs automated target searching on a huge scale across multiple social media sites. Not restricted by APIs as it instruments a browser using Selenium. Outputs reports to aid in correlating targets across sites. https://github.com/SpiderLabs/social_mapper
 * **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
 * **FOCA** (Fingerprinting Organizations with Collected Archives) is a tool used mainly to find metadata and hidden information in the documents its scans. https://github.com/ElevenPaths/FOCA
@@ -52,6 +61,8 @@ ________________________________________________________________________________
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
 
 ## Weaponization
+* **Sickle** Sickle is a shellcode development tool created to speed up the various steps needed to create functioning shellcode. https://github.com/wetw0rk/Sickle
+* **Pandoras-Box** This repo will contain random scripts that I used/use during my offensive testing. It can contain scripts ranging from extremely stupid and basic stuf to some extremely awesome and elite stuff.... Stay tuned :) https://github.com/paranoidninja/Pandoras-Box.git
 * **Evil-Droid** Evil-Droid is a framework that create & generate & embed apk payload to penetrate android platforms. https://github.com/M4sc3r4n0/Evil-Droid
 * **TheFatRat** An Easy tool to Generate Backdoor for bypass AV and Easy Tool For Post exploitation attack like browser attack,dll . This tool compiles a malware with popular payload  and then the compiled malware can be execute on windows, android, mac . . https://github.com/Screetsec/TheFatRat
 * **Microsploit** a Simple tool and not very special but this tool fast and easy create backdoor office exploitation using module metasploit packet. Like Microsoft Office in windows or mac , Open Office in linux  , Macro attack , Buffer Overflow in word . Work in kali rolling , Parrot , Backbox .. https://github.com/Screetsec/Microsploit
@@ -208,6 +219,12 @@ ________________________________________________________________________________
 * **RedSnarf** is a pen-testing / red-teaming tool for Windows environments. https://github.com/nccgroup/redsnarf
 * **HoneypotBuster** Microsoft PowerShell module designed for red teams that can be used to find honeypots and honeytokens in the network or at the host. https://github.com/JavelinNetworks/HoneypotBuster
 * **PAExec** lets you launch Windows programs on remote Windows computers without needing to install software on the remote computer first. https://www.poweradmin.com/paexec/
+* **nishang** Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing. https://github.com/samratashok/nishang
+
+## Pivoting and Tunneling
+* **http-tunnel** A program to tunnel TCP connection through HTTP connection https://github.com/khuevu/http-tunnel
+* **microsocks** a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. https://github.com/derstolz/microsocks
+* **pyrexecd** PyRexecd is a standalone SSH server for Windows. https://github.com/euske/pyrexecd.git
 
 ## Establish Foothold
 * **TinyShell** Web Shell Framework. https://github.com/threatexpress/tinyshell
@@ -233,9 +250,11 @@ ________________________________________________________________________________
 * **kekeo** is a little toolbox I have started to manipulate Microsoft Kerberos in C (and for fun). https://github.com/gentilkiwi/kekeo
 
 ### Local Escalation
+* **LinEnum** Scripted Local Linux Enumeration & Privilege Escalation Checks https://github.com/rebootuser/LinEnum
+* **wesng** WES-NG is a tool based on the output of Windows' `systeminfo` utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported. https://github.com/bitsadmin/wesng
+* **Windows-Exploit-Suggester** This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target. It also notifies the user if there are public exploits and Metasploit modules available for the missing bulletins. https://github.com/GDSSecurity/Windows-Exploit-Suggester
 * **UACMe** is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system. https://github.com/hfiref0x/UACME
 * **windows-kernel-exploits** a collection windows kernel exploit. https://github.com/SecWiki/windows-kernel-exploits
-* **The Elevate Kit** demonstrates how to use third-party privilege escalation attacks with Cobalt Strike's Beacon payload. https://github.com/rsmudge/ElevateKit
 * **Sherlock** a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities. https://github.com/rasta-mouse/Sherlock
 * **Tokenvator** a tool to elevate privilege with Windows Tokens. https://github.com/0xbadjuju/Tokenvator
 
@@ -245,6 +264,7 @@ ________________________________________________________________________________
 * **DNSExfiltrator** allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel. https://github.com/Arno0x/DNSExfiltrator
 * **PyExfil** a Python Package for Data Exfiltration. https://github.com/ytisf/PyExfil
 * **Egress-Assess** is a tool used to test egress data detection capabilities. https://github.com/ChrisTruncer/Egress-Assess
+* **LNKUp** This tool will allow you to generate LNK payloads. Upon rendering or being run, they will exfiltrate data. https://github.com/Plazmaz/LNKUp
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
 
 ## Misc
