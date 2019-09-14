@@ -14,11 +14,17 @@ def get_arguments():
     parser.add_argument('--download', dest='download', required=False,
                         help='Optional. Download a tool by it\'s name. The tool will be downloaded in a newly created '
                              'directory. Pass DOWNLOAD_ALL to download everything.')
+    parser.add_argument('--show', dest='show', required=False,
+                        help='Optional. Show details about the given tool. If a tool has a readme file then it will '
+                             'be printed to '
+                             'stdout.')
     parser.add_argument('--logging', dest='logging', choices=['INFO', 'DEBUG', 'WARNING', 'ERROR'], default='INFO',
                         help='Optional. Logging level.')
     options = parser.parse_args()
 
     return options
+
+
 options = get_arguments()
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s]: %(message)s',
@@ -80,11 +86,14 @@ class Tool:
             logging.error('Downloading failed: %s', e)
             os.rmdir(self.path)
 
-    def printout(self):
+    def printout(self, verbose=False):
         print(self.name + ' // ' + self.category['name'])
         print('DOWNLOADED' if self.is_downloaded() else 'NOT_DOWNLOADED')
         print(self.url)
         print(self.description)
+        if verbose:
+            if self.tool_readme:
+                print(self.tool_readme)
 
 
 def download_tool(tool_name, tools):
@@ -102,6 +111,16 @@ def get_tools_from_readme(readme_file):
                 tool = Tool(line, readme_file)
                 tools.append(tool)
     return tools
+
+
+def show_tool_info(tool_name, tools):
+    tool_found = False
+    for tool in tools:
+        if tool_name == tool.name:
+            tool_found = True
+            tool.printout(True)
+    if not tool_found:
+        logging.error('Tool %s wasn\'t found', tool_name)
 
 
 def get_scripts_from_readme(readme_file):
@@ -125,10 +144,14 @@ def interact(tools):
         tool_name = command.split(' ')[1]
         download_tool(tool_name, tools)
 
+    def show(command, tools):
+        show_tool_info(command.split(' ')[1], tools)
+
     def help():
         print('search <case insensitive query>')
         print('download <tool name>')
         print('download DOWNLOAD_ALL')
+        print('show <tool name>')
 
     while True:
         command = input(prefix)
@@ -138,6 +161,8 @@ def interact(tools):
             search(command, tools)
         if command.startswith('download '):
             download(command, tools)
+        if command.startswith('show '):
+            show(command, tools)
 
 
 def search_in_tools(search, tools):
@@ -160,17 +185,22 @@ readme = 'README.md'
 scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
 downloaded_tools = [t for t in tools if t.is_downloaded()]
+categories = set([t.category['alias'] for t in tools])
+print(categories)
 
-logging.info('## Red-Teaming-Toolkit initialized')
+logging.info('%s categories discovered', len(categories))
 logging.info('%s tools synchronized', len(tools))
 logging.info('%s tools downloaded', len(downloaded_tools))
 logging.info('%s scripts synchronized', len(scripts))
+logging.info('## Red-Teaming-Toolkit initialized')
 
 try:
     if options.search:
         search_in_tools(options.search, tools)
     elif options.download:
         download_tool(options.download, tools)
+    elif options.show:
+        show_tool_info(options.show, tools)
     else:
         interact(tools)
 except KeyboardInterrupt:

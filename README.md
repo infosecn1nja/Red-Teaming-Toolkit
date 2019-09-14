@@ -2,7 +2,7 @@
 
 A collection of open source and commercial tools that aid in red team operations. This repository will help you during your red team engagement.
 
-Use toolkit.py to navigate and download tools from the list.
+Use toolkit.py to discover and download tools from the list.
 ___________________________________________________________________________________________________________
 
 <img src="https://camo.githubusercontent.com/7ed924f85b775db73958b443a8798b401c40cdd2/68747470733a2f2f75706c6f6164732d73736c2e776562666c6f772e636f6d2f3538383636636165616263383364356537633537346337312f3538626534333132646331336239646537343638363132615f5265642d5465616d2d41747461636b2d4c6966656379636c652e6a7067" width="800">
