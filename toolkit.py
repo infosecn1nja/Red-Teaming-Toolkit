@@ -33,11 +33,9 @@ class Tool:
         self.description = line.split('**')[2].split('http')[0].strip()
         self.url = 'http' + line.split('http')[1]
         self.category = None
-        self.is_downloaded = False
 
     def is_tool_downloaded(self):
-        self.is_downloaded = os.path.exists(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
-        return self.is_downloaded
+        return os.path.exists(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
 
     def find_category(self, readme_file):
         with open(readme_file, 'r') as file:
@@ -51,7 +49,7 @@ class Tool:
                     }
 
     def download(self):
-        if self.is_downloaded:
+        if self.is_tool_downloaded():
             logging.info('%s is already downloaded', self.name)
             return
         from git.repo.base import Repo
@@ -59,11 +57,11 @@ class Tool:
         logging.info('Downloading %s', self.name)
         path = Path(os.getcwd() + '/' + self.category['alias'] + '/' + self.name)
         path.mkdir(parents=True, exist_ok=True)
-        Repo.clone_from(self.url, path.name)
+        Repo.clone_from(self.url, path)
 
     def printout(self):
         print(self.name + ' // ' + self.category['name'])
-        print('DONWLOADED' if self.is_downloaded else 'NOT_DOWNLOADED')
+        print('DONWLOADED' if self.is_tool_downloaded() else 'NOT_DOWNLOADED')
         print(self.url)
         print(self.description)
 
@@ -93,8 +91,18 @@ def get_scripts_from_readme(readme_file):
 def interact(tools):
     prefix = 'toolkit:>> '
     while True:
-        search = input(prefix)
-        search_in_tools(search, tools)
+        command = input(prefix)
+        if command == 'help' or command == '?':
+            print('search <case insensitive query>')
+            print('download <tool name>')
+        if command.startswith('search '):
+            query = command.split(' ')[1]
+            search_in_tools(query, tools)
+        if command.startswith('download '):
+            tool_name = command.split(' ')[1]
+            for tool in tools:
+                if tool.name == tool_name:
+                    tool.download()
 
 
 def search_in_tools(search, tools):
@@ -113,10 +121,12 @@ readme = 'README.md'
 
 scripts = get_scripts_from_readme(readme)
 tools = get_tools_from_readme(readme)
+downloaded_tools = [t for t in tools if t.is_tool_downloaded()]
 
 logging.info('## Red-Teaming-Toolkit initialized')
-logging.info('%s tools loaded', len(tools))
-logging.info('%s scripts loaded', len(scripts))
+logging.info('%s tools initialized', len(tools))
+logging.info('%s scripts initialized', len(scripts))
+logging.info('%s tools downloaded', len(downloaded_tools))
 
 try:
     if options.search:
