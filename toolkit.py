@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 from git.repo.base import Repo
-
+import asyncgit
 
 class colors:
     BLACK = "\u001b[30m"
@@ -141,7 +141,7 @@ class Tool:
     def is_downloaded(self):
         return os.path.exists(self.path) and os.listdir(self.path)
 
-    def download(self):
+    def can_download(self):
         if self.is_downloaded():
             logging.info('%s is already downloaded', self.name)
             return
@@ -153,12 +153,7 @@ class Tool:
 
         logging.info('Downloading %s', self.name)
         self.path.mkdir(parents=True, exist_ok=True)
-        try:
-            Repo.clone_from(self.url, self.path)
-            logging.info(colors.green('{} has been downloaded'.format(self.name)))
-        except Exception as e:
-            logging.error(colors.red('Download failed: ' + str(e)))
-            os.rmdir(self.path)
+        return True
 
     def update(self):
         if not self.is_downloaded():
@@ -182,9 +177,14 @@ class Tool:
 
 
 def download_tool(tool_name, tools):
+    download_list = []
+
     for tool in tools:
-        if tool.name == tool_name or tool_name == 'DOWNLOAD_ALL':
-            tool.download()
+        if tool.name == tool_name or tool_name == 'DOWNLOAD_ALL' and tool.can_download():
+            download_list.append(tool.url)
+    
+    asyncgit.download_tools(download_list)
+    
 
 
 def update_tool(tool_name, tools):
@@ -325,38 +325,39 @@ def search_in_tools(search, tools):
         colors.print_bold('*' * 60)
 
 
-readme = 'README.md'
+if __name__ == "__main__":
+    readme = 'README.md'
 
-scripts = get_scripts_from_readme(readme)
-tools = get_tools_from_readme(readme)
-downloaded_tools = [t for t in tools if t.is_downloaded()]
-categories = set([t.category['alias'] for t in tools])
+    scripts = get_scripts_from_readme(readme)
+    tools = get_tools_from_readme(readme)
+    downloaded_tools = [t for t in tools if t.is_downloaded()]
+    categories = set([t.category['alias'] for t in tools])
 
-# check for the deprecated tools
-deprecated_tools = mark_deprecated_tools(tools, categories)
+    # check for the deprecated tools
+    deprecated_tools = mark_deprecated_tools(tools, categories)
 
-if options.drop_deprecated:
-    drop_deprecated_tools(deprecated_tools)
+    if options.drop_deprecated:
+        drop_deprecated_tools(deprecated_tools)
 
-logging.info(colors.green('## Red-Teaming-Toolkit initialized'))
-logging.info('%s categories discovered', len(categories))
-logging.info('%s tools synchronized', len(tools))
-logging.info('%s tools downloaded', len(downloaded_tools))
-logging.info('%s scripts synchronized', len(scripts))
+    logging.info(colors.green('## Red-Teaming-Toolkit initialized'))
+    logging.info('%s categories discovered', len(categories))
+    logging.info('%s tools synchronized', len(tools))
+    logging.info('%s tools downloaded', len(downloaded_tools))
+    logging.info('%s scripts synchronized', len(scripts))
 
-try:
-    if options.search:
-        search_in_tools(options.search, tools)
-    elif options.update:
-        update_tool(options.update, tools)
-    elif options.download:
-        download_tool(options.download, tools)
-    elif options.show:
-        show_tool_info(options.show, tools)
-    else:
-        interact(tools)
-except KeyboardInterrupt:
-    logging.info('Keyboard interrupt, exiting')
-    exit(0)
-except Exception as e:
-    logging.error(colors.red('Unexpected error: ' + str(e)))
+    try:
+        if options.search:
+            search_in_tools(options.search, tools)
+        elif options.update:
+            update_tool(options.update, tools)
+        elif options.download:
+            download_tool(options.download, tools)
+        elif options.show:
+            show_tool_info(options.show, tools)
+        else:
+            interact(tools)
+    except KeyboardInterrupt:
+        logging.info('Keyboard interrupt, exiting')
+        exit(0)
+    except Exception as e:
+        logging.error(colors.red('Unexpected error: ' + str(e)))
