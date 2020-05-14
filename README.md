@@ -51,6 +51,7 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **SpiderFoot** the open source footprinting and intelligence-gathering tool. https://github.com/smicallef/spiderfoot
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
 * **Recon-ng** is a full-featured Web Reconnaissance framework written in Python. https://bitbucket.org/LaNMaSteR53/recon-ng
+* **Intrigue** the most intelligent and scalable asset and attack surface discovery engine.  https://core.intrigue.io/about-2/ 
 
 ## Weaponization
 * **WinRAR Remote Code Execution** Proof of Concept exploit for CVE-2018-20250. https://github.com/WyAtu/CVE-2018-20250
