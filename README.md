@@ -222,7 +222,7 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **RedSnarf** is a pen-testing / red-teaming tool for Windows environments. https://github.com/nccgroup/redsnarf
 * **HoneypotBuster** Microsoft PowerShell module designed for red teams that can be used to find honeypots and honeytokens in the network or at the host. https://github.com/JavelinNetworks/HoneypotBuster
 * **PAExec** lets you launch Windows programs on remote Windows computers without needing to install software on the remote computer first. https://www.poweradmin.com/paexec/
-
+* **Stowaway** Stowaway is Multi-hop proxy tool for security researchers and pentesters.Users can easily proxy their network traffic to intranet nodes (multi-layer),break the intranet restrction and manipulate all the nodes that under control. https://github.com/ph4ntonn/Stowaway
 ## Establish Foothold
 * **Tunna** is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments. https://github.com/SECFORCE/Tunna
 * **reGeorg** the successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn. https://github.com/sensepost/reGeorg
