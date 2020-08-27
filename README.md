@@ -17,6 +17,9 @@ ________________________________________________________________________________
 * [Misc](#misc)
 * [References](#references)
 
+## Red Team Infrastructure Deployment
+* **Redcloud**  Automated Red Team Infrastructure deployement using Docker. https://github.com/khast3x/Redcloud
+
 ## Reconnaissance
 ### Active Intelligence Gathering
 * **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
