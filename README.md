@@ -139,7 +139,8 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **PoshC2** is a proxy aware C2 framework written completely in PowerShell to aid penetration testers with red teaming, post-exploitation and lateral movement. https://github.com/nettitude/PoshC2_Python
 * **Gcat** a stealthy Python based backdoor that uses Gmail as a command and control server. https://github.com/byt3bl33d3r/gcat
 * **TrevorC2** is a legitimate website (browsable) that tunnels client/server communications for covert command execution. https://github.com/trustedsec/trevorc2
-* **Merlin** is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang. https://github.com/Ne0nd0g/merlin
+* **Merlin** is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang. https://github.com/Ne0nd0g/merlin
+* **Kubesploit** is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, built on top of Merlin, focused on containerized environments. https://github.com/cyberark/kubesploit
 * **Quasar** is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you. https://github.com/quasar/QuasarRAT
 * **Covenant** is a .NET command and control framework that aims to highlight the attack surface of .NET, make the use of offensive .NET tradecraft easier, and serve as a collaborative command and control platform for red teamers. https://github.com/cobbr/Covenant
 * **FactionC2** is a C2 framework which use websockets based API that allows for interacting with agents and transports. https://github.com/FactionC2/
