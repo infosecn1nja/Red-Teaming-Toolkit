@@ -259,7 +259,7 @@ https://github.com/l0ss/Grouper
 * **Sherlock** a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
  https://github.com/rasta-mouse/Sherlock
 * **Tokenvator** a tool to elevate privilege with Windows Tokens. https://github.com/0xbadjuju/Tokenvator
-* **RevShells.com** online reverse shell generator 
+* **RevShells.com** online reverse shell generator. https://www.revshells.com/
 
 ## Data Exfiltration
 * **CloakifyFactory** & the Cloakify Toolset - Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. https://github.com/TryCatchHCF/Cloakify
