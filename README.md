@@ -219,7 +219,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |reGeorg|The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.|https://github.com/sensepost/reGeorg|
 |DAMP|The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.|https://github.com/HarmJ0y/DAMP|
 |IIS-Raid|A native backdoor module for Microsoft IIS (Internet Information Services)|https://github.com/0x09AL/IIS-Raid|
-|SharPyShell|tiny and obfuscated ASP.NET webshell for C# web applications||https://github.com/antonioCoco/SharPyShell|
+|SharPyShell|tiny and obfuscated ASP.NET webshell for C# web applications|https://github.com/antonioCoco/SharPyShell|
 
 ## Lateral Movement
 |Name|Description|URL|
