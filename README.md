@@ -219,6 +219,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |reGeorg|The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.|https://github.com/sensepost/reGeorg|
 |DAMP|The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.|https://github.com/HarmJ0y/DAMP|
 |IIS-Raid|A native backdoor module for Microsoft IIS (Internet Information Services)|https://github.com/0x09AL/IIS-Raid|
+|SharPyShell|tiny and obfuscated ASP.NET webshell for C# web applications||https://github.com/antonioCoco/SharPyShell|
 
 ## Lateral Movement
 |Name|Description|URL|
@@ -243,6 +244,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpAllowedToAct|A C# implementation of a computer object takeover through Resource-Based Constrained Delegation (msDS-AllowedToActOnBehalfOfOtherIdentity) based on the research by @elad_shamir.|https://github.com/pkb1s/SharpAllowedToAct|
 |SharpRDPHijack|Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|https://github.com/bohops/SharpRDPHijack|
 |CheeseTools|This repository has been made basing onto the already existing MiscTool, so big shout-out to rasta-mouse for releasing them and for giving me the right motivation to work on them.|https://github.com/klezVirus/CheeseTools|
+|SharpSpray|SharpSpray is a Windows domain password spraying tool written in .NET C#.|https://github.com/iomoath/SharpSpray|
 
 ## Exfiltration
 |Name|Description|URL|
@@ -284,6 +286,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |RedTeamCCode|Red Team C code repo|https://github.com/Mr-Un1k0d3r/RedTeamCCode|
+|EDRs|This repo contains information about EDRs that can be useful during red team exercise.|https://github.com/Mr-Un1k0d3r/EDRs|
 |Cobalt Strike Community Kit|Community Kit is a central repository of extensions written by the user community to extend the capabilities of Cobalt Strike.|https://cobalt-strike.github.io/community_kit/|
 
 ## License
