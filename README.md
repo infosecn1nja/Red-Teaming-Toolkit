@@ -177,6 +177,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Chlonium|Chlonium is an application designed for cloning Chromium Cookies.|https://github.com/rxwx/chlonium|
 |SharpCloud|SharpCloud is a simple C# utility for checking for the existence of credential files related to Amazon Web Services, Microsoft Azure, and Google Compute.|https://github.com/chrismaddalena/SharpCloud|
 |pypykatz|Mimikatz implementation in pure Python. At least a part of it :)|https://github.com/skelsec/pypykatz|
+|nanodump|A Beacon Object File that creates a minidump of the LSASS process.|https://github.com/helpsystems/nanodump|
 
 ## Privilege Escalation
 |Name|Description|URL|
