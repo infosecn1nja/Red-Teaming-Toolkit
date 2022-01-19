@@ -49,6 +49,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 ### Payload Development
 |Name|Description|URL|
 |-----|-----------|----|
+|Ivy|Ivy is a payload creation framework for the execution of arbitrary VBA (macro) source code directly in memory.|https://github.com/optiv/Ivy|
 |PEzor|Open-Source PE Packer|https://github.com/phra/PEzor|
 |GadgetToJScript|A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS/VBA scripts.|https://github.com/med0x2e/GadgetToJScript|
 |ScareCrow|Payload creation framework designed around EDR bypass.|https://github.com/optiv/ScareCrow|
@@ -193,6 +194,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 ## Defense Evasion
 |Name|Description|URL|
 |-----|-----------|----|
+|EDRSandBlast|EDRSandBlast is a tool written in C that weaponize a vulnerable signed driver to bypass EDR detections (Kernel callbacks and ETW TI provider) and LSASS protections.|https://github.com/wavestone-cdt/EDRSandblast|
 |unDefender|Killing your preferred antimalware by abusing native symbolic links and NT paths.|https://github.com/APTortellini/unDefender|
 |Backstab|A tool to kill antimalware protected processes|https://github.com/Yaxser/Backstab|
 |SPAWN - Cobalt Strike BOF|Cobalt Strike BOF that spawns a sacrificial process, injects it with shellcode, and executes payload. Built to evade EDR/UserLand hooks by spawning sacrificial process with Arbitrary Code Guard (ACG), BlockDll, and PPID spoofing.|https://github.com/boku7/spawn|
