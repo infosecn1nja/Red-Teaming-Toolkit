@@ -188,6 +188,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |dazzleUP|A tool that detects the privilege escalation vulnerabilities caused by misconfigurations and missing updates in the Windows operating systems. dazzleUP detects the following vulnerabilities.|https://github.com/hlldz/dazzleUP|
 |PEASS|Privilege Escalation Awesome Scripts SUITE (with colors)|https://github.com/carlospolop/PEASS-ng|
 |SweetPotato|A collection of various native Windows privilege escalation techniques from service accounts to SYSTEM|https://github.com/CCob/SweetPotato|
+|MultiPotato| Another Potato to get SYSTEM via SeImpersonate privileges |https://github.com/S3cur3Th1sSh1t/MultiPotato|
 
 ## Defense Evasion
 |Name|Description|URL|
