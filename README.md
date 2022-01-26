@@ -194,6 +194,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 ## Defense Evasion
 |Name|Description|URL|
 |-----|-----------|----|
+|RefleXXion|RefleXXion is a utility designed to aid in bypassing user-mode hooks utilised by AV/EPP/EDR etc.|https://github.com/hlldz/RefleXXion|
 |EDRSandBlast|EDRSandBlast is a tool written in C that weaponize a vulnerable signed driver to bypass EDR detections (Kernel callbacks and ETW TI provider) and LSASS protections.|https://github.com/wavestone-cdt/EDRSandblast|
 |unDefender|Killing your preferred antimalware by abusing native symbolic links and NT paths.|https://github.com/APTortellini/unDefender|
 |Backstab|A tool to kill antimalware protected processes|https://github.com/Yaxser/Backstab|
