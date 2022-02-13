@@ -75,6 +75,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |MSBuildAPICaller|MSBuild Without MSBuild.exe|https://github.com/rvrsh3ll/MSBuildAPICaller|
 |macro_pack|macro_pack is a tool by @EmericNasi used to automatize obfuscation and generation of MS Office documents, VB scripts, and other formats for pentest, demo, and social engineering assessments.|https://github.com/sevagas/macro_pack|
 |inceptor|Template-Driven AV/EDR Evasion Framework|https://github.com/klezVirus/inceptor|
+|mortar|evasion technique to defeat and divert detection and prevention of security products (AV/EDR/XDR)|https://github.com/0xsp-SRD/mortar|
 
 ## Delivery
 ### Phishing
@@ -121,6 +122,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Chameleon|A tool for evading Proxy categorisation|https://github.com/mdsecactivebreach/Chameleon|
 |Cobalt Strike Malleable C2 Design and Reference Guide|Cobalt Strike Malleable C2 Design and Reference Guide|https://github.com/threatexpress/malleable-c2/|
 |redirect.rules|Quick and dirty dynamic redirect.rules generator|https://github.com/0xZDH/redirect.rules|
+|CobaltBus|Cobalt Strike External C2 Integration With Azure Servicebus, C2 traffic via Azure Servicebus|https://github.com/Flangvik/CobaltBus|
 
 ### Log Aggregation
 |Name|Description|URL|
@@ -211,6 +213,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |DarkLoadLibrary|LoadLibrary for offensive operations.|https://github.com/bats3c/DarkLoadLibrary|
 |BlockETW|.Net 3.5 / 4.5 Assembly to block ETW telemetry in a process|https://github.com/Soledge/BlockEtw|
 |firewalker|This repo contains a simple library which can be used to add FireWalker hook bypass capabilities to existing code|https://github.com/mdsecactivebreach/firewalker|
+|KillDefenderBOF|Beacon Object File PoC implementation of KillDefender|https://github.com/Cerbersec/KillDefenderBOF|
 
 ## Persistence
 |Name|Description|URL|
