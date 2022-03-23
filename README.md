@@ -76,6 +76,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |macro_pack|macro_pack is a tool by @EmericNasi used to automatize obfuscation and generation of MS Office documents, VB scripts, and other formats for pentest, demo, and social engineering assessments.|https://github.com/sevagas/macro_pack|
 |inceptor|Template-Driven AV/EDR Evasion Framework|https://github.com/klezVirus/inceptor|
 |mortar|evasion technique to defeat and divert detection and prevention of security products (AV/EDR/XDR)|https://github.com/0xsp-SRD/mortar|
+|TheFatRat|TheFatRat is an exploiting tool which compiles a malware with famous payload, and then the compiled maware can be executed on Linux , Windows , Mac and Android.|https://github.com/screetsec/TheFatRat|
 
 ## Delivery
 ### Phishing
