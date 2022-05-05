@@ -228,6 +228,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |DAMP|The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.|https://github.com/HarmJ0y/DAMP|
 |IIS-Raid|A native backdoor module for Microsoft IIS (Internet Information Services)|https://github.com/0x09AL/IIS-Raid|
 |SharPyShell|tiny and obfuscated ASP.NET webshell for C# web applications|https://github.com/antonioCoco/SharPyShell|
+|ScheduleRunner|A C# tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation|https://github.com/netero1010/ScheduleRunner|
 
 ## Lateral Movement
 |Name|Description|URL|
@@ -253,6 +254,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpRDPHijack|Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|https://github.com/bohops/SharpRDPHijack|
 |CheeseTools|This repository has been made basing onto the already existing MiscTool, so big shout-out to rasta-mouse for releasing them and for giving me the right motivation to work on them.|https://github.com/klezVirus/CheeseTools|
 |SharpSpray|SharpSpray is a Windows domain password spraying tool written in .NET C#.|https://github.com/iomoath/SharpSpray|
+|MalSCCM|This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.|https://github.com/nettitude/MalSCCM
 
 ## Exfiltration
 |Name|Description|URL|
