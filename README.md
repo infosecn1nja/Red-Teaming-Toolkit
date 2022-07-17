@@ -181,6 +181,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpCloud|SharpCloud is a simple C# utility for checking for the existence of credential files related to Amazon Web Services, Microsoft Azure, and Google Compute.|https://github.com/chrismaddalena/SharpCloud|
 |pypykatz|Mimikatz implementation in pure Python. At least a part of it :)|https://github.com/skelsec/pypykatz|
 |nanodump|A Beacon Object File that creates a minidump of the LSASS process.|https://github.com/helpsystems/nanodump|
+|Koh|Koh is a C# and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.|https://github.com/GhostPack/Koh|
 
 ## Privilege Escalation
 |Name|Description|URL|
@@ -215,6 +216,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |BlockETW|.Net 3.5 / 4.5 Assembly to block ETW telemetry in a process|https://github.com/Soledge/BlockEtw|
 |firewalker|This repo contains a simple library which can be used to add FireWalker hook bypass capabilities to existing code|https://github.com/mdsecactivebreach/firewalker|
 |KillDefenderBOF|Beacon Object File PoC implementation of KillDefender|https://github.com/Cerbersec/KillDefenderBOF|
+|Mangle|Mangle is a tool that manipulates aspects of compiled executables (.exe or DLL) to avoid detection from EDRs|https://github.com/optiv/Mangle|
 
 ## Persistence
 |Name|Description|URL|
@@ -257,6 +259,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |CheeseTools|This repository has been made basing onto the already existing MiscTool, so big shout-out to rasta-mouse for releasing them and for giving me the right motivation to work on them.|https://github.com/klezVirus/CheeseTools|
 |SharpSpray|SharpSpray is a Windows domain password spraying tool written in .NET C#.|https://github.com/iomoath/SharpSpray|
 |MalSCCM|This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.|https://github.com/nettitude/MalSCCM
+|Coercer|A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 9 methods.|https://github.com/p0dalirius/Coercer|
+|SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 
 ## Exfiltration
 |Name|Description|URL|
