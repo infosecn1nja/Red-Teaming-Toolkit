@@ -239,6 +239,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |-----|-----------|----|
 |Liquid Snake|LiquidSnake is a tool that allows operators to perform fileless lateral movement using WMI Event Subscriptions and GadgetToJScript|https://github.com/RiccardoAncarani/LiquidSnake|
 |PowerUpSQL|A PowerShell Toolkit for Attacking SQL Server|https://github.com/NetSPI/PowerUpSQL|
+|SCShell|Fileless lateral movement tool that relies on ChangeServiceConfigA to run command|https://github.com/Mr-Un1k0d3r/SCShell|
 |SharpRDP|Remote Desktop Protocol Console Application for Authenticated Command Execution|https://github.com/0xthirteen/SharpRDP|
 |MoveKit|Movekit is an extension of built in Cobalt Strike lateral movement by leveraging the execute_assembly function with the SharpMove and SharpRDP .NET assemblies.|https://github.com/0xthirteen/MoveKit|
 |SharpNoPSExec|File less command execution for lateral movement.|https://github.com/juliourena/SharpNoPSExec|
