@@ -220,6 +220,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |firewalker|This repo contains a simple library which can be used to add FireWalker hook bypass capabilities to existing code|https://github.com/mdsecactivebreach/firewalker|
 |KillDefenderBOF|Beacon Object File PoC implementation of KillDefender|https://github.com/Cerbersec/KillDefenderBOF|
 |Mangle|Mangle is a tool that manipulates aspects of compiled executables (.exe or DLL) to avoid detection from EDRs|https://github.com/optiv/Mangle|
+|AceLdr|Cobalt Strike UDRL for memory scanner evasion.|https://github.com/kyleavery/AceLdr|
 
 ## Persistence
 |Name|Description|URL|
@@ -274,6 +275,12 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Egress-Assess|Egress-Assess is a tool used to test egress data detection capabilities.|https://github.com/FortyNorthSecurity/Egress-Assess|
 
 ## Miscellaneous
+### Threat-informed Defense
+|Name|Description|URL|
+|-----|-----------|----|
+|Tidal Cyber|Tidal Cyber helps enterprise organizations to define, measure, and improve their defenses to address the adversary behaviors that are most important to them.|https://app.tidalcyber.com|
+|Control Validation Compass|Threat modeling aide & purple team content repository, pointing security & intelligence teams to 10,000+ publicly-accessible technical and policy controls and 2,100+ offensive security tests, aligned with nearly 600 common attacker techniques|https://controlcompass.github.io|
+
 ### Cloud
 #### Amazon Web Services  (AWS)
 |Name|Description|URL|
