@@ -77,6 +77,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |inceptor|Template-Driven AV/EDR Evasion Framework|https://github.com/klezVirus/inceptor|
 |mortar|evasion technique to defeat and divert detection and prevention of security products (AV/EDR/XDR)|https://github.com/0xsp-SRD/mortar|
 |ProtectMyTooling|Multi-Packer wrapper letting us daisy-chain various packers, obfuscators and other Red Team oriented weaponry. Featured with artifacts watermarking, IOCs collection & PE Backdooring. You feed it with your implant, it does a lot of sneaky things and spits out obfuscated executable.|https://github.com/mgeeky/ProtectMyTooling|
+|Freeze|Freeze is a payload toolkit for bypassing EDRs using suspended processes, direct syscalls, and alternative execution methods|https://github.com/optiv/Freeze|
 
 ## Delivery
 ### Phishing
@@ -109,6 +110,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Sliver|Sliver is a general purpose cross-platform implant framework that supports C2 over Mutual-TLS, HTTP(S), and DNS.|https://github.com/BishopFox/sliver|
 |SILENTTRINITY|An asynchronous, collaborative post-exploitation agent powered by Python and .NET's DLR|https://github.com/byt3bl33d3r/SILENTTRINITY|
 |Pupy|Pupy is an opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python|https://github.com/n1nj4sec/pupy|
+|Havoc|Havoc is a modern and malleable post-exploitation command and control framework, created by @C5pider.|https://github.com/HavocFramework/Havoc|
 
 ### Staging
 |Name|Description|URL|
