@@ -304,7 +304,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |Stratus Red Team|Stratus Red Team is "Atomic Red Team™" for the cloud, allowing to emulate offensive attack techniques in a granular and self-contained manner.|https://github.com/DataDog/stratus-red-team|
-|Prelude Operator|A Platform for Developer-first advanced security· Defend your organization by mimicking real adversarial attacks.|https://www.prelude.org/|
+|Prelude Operator|A Platform for Developer-first advanced security· Defend your organization by mimicking real adversarial attacks.|https://www.preludesecurity.com/products/operator|
+|Prelude Build|An open source IDE for authoring, testing, and verifying production-ready security tests..|https://www.preludesecurity.com/products/build|
 |Caldera|An automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks.|https://github.com/mitre/caldera|
 |APTSimulator|A Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.|https://github.com/NextronSystems/APTSimulator|
 |Atomic Red Team|Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.|https://github.com/redcanaryco/atomic-red-team|
