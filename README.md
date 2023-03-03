@@ -326,6 +326,11 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |EDRs|This repo contains information about EDRs that can be useful during red team exercise.|https://github.com/Mr-Un1k0d3r/EDRs|
 |Cobalt Strike Community Kit|Community Kit is a central repository of extensions written by the user community to extend the capabilities of Cobalt Strike.|https://cobalt-strike.github.io/community_kit/|
 
+### Red Team Infrastructure
+|Name|Description|URL|
+|-----|-----------|----|
+|Red Team Infrastructure Wiki|Wiki to collect Red Team infrastructure hardening resources|https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki|
+
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
