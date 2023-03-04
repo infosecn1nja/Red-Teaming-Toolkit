@@ -101,7 +101,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |Cobalt Strike|Cobalt Strike is software for Adversary Simulations and Red Team Operations.|https://cobaltstrike.com/|
-|Empire|Empire 3 is a post-exploitation framework that includes a pure-PowerShell Windows agent, and compatibility with Python 3.x Linux/OS X agents.|https://github.com/BC-SECURITY/Empire|
+|Empire|Empire 5 is a post-exploitation framework that includes a pure-PowerShell Windows agent, and compatibility with Python 3.x Linux/OS X agents.|https://github.com/BC-SECURITY/Empire|
 |PoshC2|PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement.|https://github.com/nettitude/PoshC2|
 |Koadic|Koadic C3 COM Command & Control - JScript RAT|https://github.com/zerosum0x0/koadic|
 |merlin|Merlin is a cross-platform post-exploitation Command & Control server and agent written in Go.|https://github.com/Ne0nd0g/merlin|
@@ -137,6 +137,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |-----|-----------|----|
 |RedELK|Red Team's SIEM - tool for Red Teams used for tracking and alarming about Blue Team activities as well as better usability in long term operations.|https://github.com/outflanknl/RedELK|
 |Elastic for Red Teaming|Repository of resources for configuring a Red Team SIEM using Elastic.|https://github.com/SecurityRiskAdvisors/RedTeamSIEM|
+|RedEye|RedEye is a visual analytic tool supporting Red & Blue Team operations|https://github.com/cisagov/RedEye|
 
 ## Situational Awareness
 ### Host Situational Awareness
@@ -243,6 +244,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharPyShell|tiny and obfuscated ASP.NET webshell for C# web applications|https://github.com/antonioCoco/SharPyShell|
 |ScheduleRunner|A C# tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation|https://github.com/netero1010/ScheduleRunner|
 |SharpEventPersist|Persistence by writing/reading shellcode from Event Log|https://github.com/improsec/SharpEventPersist|
+|Kraken|Kraken, a modular multi-language webshell coded by @secu_x11.|https://github.com/kraken-ng/Kraken|
 
 ## Lateral Movement
 |Name|Description|URL|
