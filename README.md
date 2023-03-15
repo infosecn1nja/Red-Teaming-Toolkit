@@ -229,6 +229,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Mangle|Mangle is a tool that manipulates aspects of compiled executables (.exe or DLL) to avoid detection from EDRs|https://github.com/optiv/Mangle|
 |AceLdr|Cobalt Strike UDRL for memory scanner evasion.|https://github.com/kyleavery/AceLdr|
 |AtomLdr|CA DLL loader with advanced evasive features|https://github.com/NUL0x4C/AtomLdr|
+|Inline-Execute-PE|Execute unmanaged Windows executables in CobaltStrike Beacons|https://github.com/Octoberfest7/Inline-Execute-PE|
+
 
 ## Persistence
 |Name|Description|URL|
@@ -308,6 +310,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |ROADtools|The Azure AD exploration framework.|https://github.com/dirkjanm/ROADtools|
 |MicroBurst: A PowerShell Toolkit for Attacking Azure|A collection of scripts for assessing Microsoft Azure security|https://github.com/NetSPI/MicroBurst|
 |AADInternals|AADInternals PowerShell module for administering Azure AD and Office 365|https://github.com/Gerenios/AADInternals|
+|TeamFiltration|TeamFiltration is a cross-platform framework for enumerating, spraying, exfiltrating, and backdooring O365 AAD accounts.|https://github.com/Flangvik/TeamFiltration|
 
 ### Adversary Emulation
 |Name|Description|URL|
