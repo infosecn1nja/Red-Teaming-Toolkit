@@ -311,6 +311,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |MicroBurst: A PowerShell Toolkit for Attacking Azure|A collection of scripts for assessing Microsoft Azure security|https://github.com/NetSPI/MicroBurst|
 |AADInternals|AADInternals PowerShell module for administering Azure AD and Office 365|https://github.com/Gerenios/AADInternals|
 |TeamFiltration|TeamFiltration is a cross-platform framework for enumerating, spraying, exfiltrating, and backdooring O365 AAD accounts.|https://github.com/Flangvik/TeamFiltration|
+|MAAD Attack Framework|An attack tool for simple, fast & effective security testing of M365 & Azure AD.|https://github.com/vectra-ai-research/MAAD-AF|
 
 ### Adversary Emulation
 |Name|Description|URL|
