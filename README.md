@@ -326,6 +326,17 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Metta|A security preparedness tool to do adversarial simulation.|https://github.com/uber-common/metta|
 |Red Team Automation (RTA)| RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&CK.|https://github.com/endgameinc/RTA|
 
+### Living Off the Living Off the Land
+|Name|Description|URL|
+|-----|-----------|----|
+|Living Off The Land Drivers|Living Off The Land Drivers is a curated list of Windows drivers used by adversaries to bypass security controls and carry out attacks|https://www.loldrivers.io/|
+|GTFOBins|GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems|https://gtfobins.github.io|
+|LOLBAS|The goal of the LOLBAS project is to document every binary, script, and library that can be used for Living Off The Land techniques|https://lolbas-project.github.io/|
+|Living Off Trusted Sites (LOTS) Project|Attackers are using popular legitimate domains when conducting phishing, C&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain|https://lots-project.com|
+|Filesec|Stay up-to-date with the latest file extensions being used by attackers.|https://filesec.io/|
+|LOOBins|Living Off the Orchard: macOS Binaries (LOOBins) is designed to provide detailed information on various built-in macOS binaries and how they can be used by threat actors for malicious purposes.|https://www.loobins.io/|
+|WTFBins|WTFBin(n): a binary that behaves exactly like malware, except, somehow, it's not? This project aims to catalogue benign applications that exhibit suspicious behavior. These binaries can emit noise and false positives in threat hunting and automated detections.|https://wtfbins.wtf/|
+
 ### Red Team Scripts
 |Name|Description|URL|
 |-----|-----------|----|
