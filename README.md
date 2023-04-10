@@ -336,6 +336,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Filesec|Stay up-to-date with the latest file extensions being used by attackers.|https://filesec.io/|
 |LOOBins|Living Off the Orchard: macOS Binaries (LOOBins) is designed to provide detailed information on various built-in macOS binaries and how they can be used by threat actors for malicious purposes.|https://www.loobins.io/|
 |WTFBins|WTFBin(n): a binary that behaves exactly like malware, except, somehow, it's not? This project aims to catalogue benign applications that exhibit suspicious behavior. These binaries can emit noise and false positives in threat hunting and automated detections.|https://wtfbins.wtf/|
+|Hijack Libs|This project provides an curated list of DLL Hijacking candidates|https://hijacklibs.net|
 
 ### Red Team Scripts
 |Name|Description|URL|
