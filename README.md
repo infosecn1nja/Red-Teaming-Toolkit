@@ -204,6 +204,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SweetPotato|A collection of various native Windows privilege escalation techniques from service accounts to SYSTEM|https://github.com/CCob/SweetPotato|
 |MultiPotato| Another Potato to get SYSTEM via SeImpersonate privileges |https://github.com/S3cur3Th1sSh1t/MultiPotato|
 |KrbRelayUp|a universal no-fix local privilege escalation in windows domain environments where LDAP signing is not enforced (the default settings).|https://github.com/Dec0ne/KrbRelayUp|
+|GodPotato|As Long as You Have the ImpersonatePrivilege Permission, Then You are the SYSTEM!|https://github.com/BeichenDream/GodPotato|
 
 ## Defense Evasion
 |Name|Description|URL|
@@ -230,7 +231,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |AceLdr|Cobalt Strike UDRL for memory scanner evasion.|https://github.com/kyleavery/AceLdr|
 |AtomLdr|CA DLL loader with advanced evasive features|https://github.com/NUL0x4C/AtomLdr|
 |Inline-Execute-PE|Execute unmanaged Windows executables in CobaltStrike Beacons|https://github.com/Octoberfest7/Inline-Execute-PE|
-
+|SigFlip|SigFlip is a tool for patching authenticode signed PE files (exe, dll, sys ..etc) without invalidating or breaking the existing signature.|https://github.com/med0x2e/SigFlip|
 
 ## Persistence
 |Name|Description|URL|
@@ -279,6 +280,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Coercer|A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 9 methods.|https://github.com/p0dalirius/Coercer|
 |SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 |orpheus|Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types|https://github.com/trustedsec/orpheus|
+|Chisel|Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server.|https://github.com/jpillora/chisel|
+|frp|frp is a fast reverse proxy that allows you to expose a local server located behind a NAT or firewall to the Internet.|https://github.com/fatedier/frp|
 
 ## Exfiltration
 |Name|Description|URL|
