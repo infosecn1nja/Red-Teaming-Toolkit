@@ -1,4 +1,4 @@
-# Red Teaming Toolkit
+# Red Teaming Frameworks Toolkit
 
 This repository contains cutting-edge open-source security tools (OST) that will help you during adversary simulation and as information intended for threat hunter can make detection and prevention control easier. The list of tools below that could be potentially misused by threat actors such as APT and Human-Operated Ransomware (HumOR). If you want to contribute to this list send me a pull request.
 
