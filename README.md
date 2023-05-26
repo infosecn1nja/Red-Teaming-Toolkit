@@ -132,6 +132,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |CobaltBus|Cobalt Strike External C2 Integration With Azure Servicebus, C2 traffic via Azure Servicebus|https://github.com/Flangvik/CobaltBus|
 |SourcePoint|SourcePoint is a C2 profile generator for Cobalt Strike command and control servers designed to ensure evasion.|https://github.com/Tylous/SourcePoint|
 |RedGuard|RedGuard is a C2 front flow control tool,Can avoid Blue Teams,AVs,EDRs check.|https://github.com/wikiZ/RedGuard|
+|skyhook|A round-trip obfuscated HTTP file transfer setup built to bypass IDS detections.|https://github.com/blackhillsinfosec/skyhook|
 
 ### Log Aggregation
 |Name|Description|URL|
@@ -249,6 +250,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |ScheduleRunner|A C# tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation|https://github.com/netero1010/ScheduleRunner|
 |SharpEventPersist|Persistence by writing/reading shellcode from Event Log|https://github.com/improsec/SharpEventPersist|
 |Kraken|Kraken, a modular multi-language webshell coded by @secu_x11.|https://github.com/kraken-ng/Kraken|
+|HiddenDesktop|HVNC for Cobalt Strike|https://github.com/WKL-Sec/HiddenDesktop|
 
 ## Lateral Movement
 |Name|Description|URL|
