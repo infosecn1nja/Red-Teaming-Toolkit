@@ -233,6 +233,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |AtomLdr|CA DLL loader with advanced evasive features|https://github.com/NUL0x4C/AtomLdr|
 |Inline-Execute-PE|Execute unmanaged Windows executables in CobaltStrike Beacons|https://github.com/Octoberfest7/Inline-Execute-PE|
 |SigFlip|SigFlip is a tool for patching authenticode signed PE files (exe, dll, sys ..etc) without invalidating or breaking the existing signature.|https://github.com/med0x2e/SigFlip|
+|Blackout|kill anti-malware protected processes (BYOVD)|https://github.com/ZeroMemoryEx/Blackout|
 
 ## Persistence
 |Name|Description|URL|
