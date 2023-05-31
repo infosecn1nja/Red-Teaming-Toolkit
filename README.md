@@ -165,6 +165,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |PSPKIAudit|PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).|https://github.com/GhostPack/PSPKIAudit|
 |SharpView|C# implementation of harmj0y's PowerView|https://github.com/tevora-threat/SharpView|
 |Rubeus|Rubeus is a C# toolset for raw Kerberos interaction and abuses. It is heavily adapted from Benjamin Delpy's Kekeo project (CC BY-NC-SA 4.0 license) and Vincent LE TOUX's MakeMeEnterpriseAdmin project (GPL v3.0 license). |https://github.com/GhostPack/Rubeus|
+|nanorobeus|A minimalistic tool for managing Kerberos tickets. Supports redteam frameworks|https://github.com/wavvs/nanorobeus|
 |Grouper|A PowerShell script for helping to find vulnerable settings in AD Group Policy. (deprecated, use Grouper2 instead!)|https://github.com/l0ss/Grouper|
 |ImproHound|Identify the attack paths in BloodHound breaking your AD tiering|https://github.com/improsec/ImproHound|
 |ADRecon|ADRecon is a tool which gathers information about the Active Directory and generates a report which can provide a holistic picture of the current state of the target AD environment.|https://github.com/adrecon/ADRecon|
