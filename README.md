@@ -194,6 +194,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |pypykatz|Mimikatz implementation in pure Python. At least a part of it :)|https://github.com/skelsec/pypykatz|
 |nanodump|A Beacon Object File that creates a minidump of the LSASS process.|https://github.com/helpsystems/nanodump|
 |Koh|Koh is a C# and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.|https://github.com/GhostPack/Koh|
+|PPLBlade|Protected Process Dumper Tool that support obfuscating memory dump and transferring it on remote workstations without dropping it onto the disk.|https://github.com/tastypepperoni/PPLBlade|
 
 ## Privilege Escalation
 |Name|Description|URL|
@@ -207,6 +208,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |MultiPotato| Another Potato to get SYSTEM via SeImpersonate privileges |https://github.com/S3cur3Th1sSh1t/MultiPotato|
 |KrbRelayUp|a universal no-fix local privilege escalation in windows domain environments where LDAP signing is not enforced (the default settings).|https://github.com/Dec0ne/KrbRelayUp|
 |GodPotato|As Long as You Have the ImpersonatePrivilege Permission, Then You are the SYSTEM!|https://github.com/BeichenDream/GodPotato|
+|PrivKit|PrivKit is a simple beacon object file that detects privilege escalation vulnerabilities caused by misconfigurations on Windows OS.|https://github.com/mertdas/PrivKit|
 
 ## Defense Evasion
 |Name|Description|URL|
@@ -235,6 +237,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Inline-Execute-PE|Execute unmanaged Windows executables in CobaltStrike Beacons|https://github.com/Octoberfest7/Inline-Execute-PE|
 |SigFlip|SigFlip is a tool for patching authenticode signed PE files (exe, dll, sys ..etc) without invalidating or breaking the existing signature.|https://github.com/med0x2e/SigFlip|
 |Blackout|kill anti-malware protected processes (BYOVD)|https://github.com/ZeroMemoryEx/Blackout|
+|ShellGhost|A memory-based evasion technique which makes shellcode invisible from process start to end.|https://github.com/lem0nSec/ShellGhost
 
 ## Persistence
 |Name|Description|URL|
@@ -279,13 +282,19 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpAllowedToAct|A C# implementation of a computer object takeover through Resource-Based Constrained Delegation (msDS-AllowedToActOnBehalfOfOtherIdentity) based on the research by @elad_shamir.|https://github.com/pkb1s/SharpAllowedToAct|
 |SharpRDPHijack|Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|https://github.com/bohops/SharpRDPHijack|
 |CheeseTools|This repository has been made basing onto the already existing MiscTool, so big shout-out to rasta-mouse for releasing them and for giving me the right motivation to work on them.|https://github.com/klezVirus/CheeseTools|
+|LatLoader|PoC module to demonstrate automated lateral movement with the Havoc C2 framework.|https://github.com/icyguider/LatLoader|
 |SharpSpray|SharpSpray is a Windows domain password spraying tool written in .NET C#.|https://github.com/iomoath/SharpSpray|
 |MalSCCM|This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.|https://github.com/nettitude/MalSCCM
 |Coercer|A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 9 methods.|https://github.com/p0dalirius/Coercer|
 |SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 |orpheus|Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types|https://github.com/trustedsec/orpheus|
+
+### Tunneling
+|Name|Description|URL|
+|-----|-----------|----|
 |Chisel|Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server.|https://github.com/jpillora/chisel|
 |frp|frp is a fast reverse proxy that allows you to expose a local server located behind a NAT or firewall to the Internet.|https://github.com/fatedier/frp|
+|ligolo-ng|An advanced, yet simple, tunneling tool that uses a TUN interface.|https://github.com/nicocha30/ligolo-ng|
 
 ## Exfiltration
 |Name|Description|URL|
@@ -332,6 +341,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Network Flight Simulator|flightsim is a lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility.|https://github.com/alphasoc/flightsim|
 |Metta|A security preparedness tool to do adversarial simulation.|https://github.com/uber-common/metta|
 |Red Team Automation (RTA)| RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&CK.|https://github.com/endgameinc/RTA|
+|TTPForge|The TTPForge is a Framework created to facilitate the development, automation, and execution of Tactics, Techniques, and Procedures (TTPs).|https://github.com/facebookincubator/TTPForge|
 
 ### Living Off the Living Off the Land
 |Name|Description|URL|
@@ -356,6 +366,18 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |Red Team Infrastructure Wiki|Wiki to collect Red Team infrastructure hardening resources|https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki|
+
+### DevOps
+|Name|Description|URL|
+|-----|-----------|----|
+|Nemesis|Nemesis is an offensive data enrichment pipeline and operator support system.|https://github.com/SpecterOps/Nemesis|
+
+### Reporting & Tracking
+|Name|Description|URL|
+|-----|-----------|----|
+|Ghostwriter|Ghostwriter is a Django-based web application designed to be used by an individual or a team of red team operators.|https://github.com/GhostManager/Ghostwriter|
+|VECTR|VECTR is a tool that facilitates tracking of your red and blue team testing activities to measure detection and prevention capabilities across different attack scenarios|https://github.com/SecurityRiskAdvisors/VECTR|
+|PurpleOps|An open-source self-hosted purple team management web application.|https://github.com/CyberCX-STA/PurpleOps|
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
