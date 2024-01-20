@@ -238,6 +238,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SigFlip|SigFlip is a tool for patching authenticode signed PE files (exe, dll, sys ..etc) without invalidating or breaking the existing signature.|https://github.com/med0x2e/SigFlip|
 |Blackout|kill anti-malware protected processes (BYOVD)|https://github.com/ZeroMemoryEx/Blackout|
 |ShellGhost|A memory-based evasion technique which makes shellcode invisible from process start to end.|https://github.com/lem0nSec/ShellGhost
+|PoolPartyBof|A beacon object file implementation of PoolParty Process Injection Technique by @SafeBreach and @0xDeku, that abuses Windows Thread Pools.|https://github.com/0xEr3bus/PoolPartyBof|
+|EDRSilencer|A tool uses Windows Filtering Platform (WFP) to block Endpoint Detection and Response (EDR) agents from reporting security events to the server|https://github.com/netero1010/EDRSilencer|
 
 ## Persistence
 |Name|Description|URL|
@@ -328,6 +330,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |AADInternals|AADInternals PowerShell module for administering Azure AD and Office 365|https://github.com/Gerenios/AADInternals|
 |TeamFiltration|TeamFiltration is a cross-platform framework for enumerating, spraying, exfiltrating, and backdooring O365 AAD accounts.|https://github.com/Flangvik/TeamFiltration|
 |MAAD Attack Framework|An attack tool for simple, fast & effective security testing of M365 & Azure AD.|https://github.com/vectra-ai-research/MAAD-AF|
+|GraphRunner|A Post-exploitation Toolset for Interacting with the Microsoft Graph API|https://github.com/dafthack/GraphRunner/|
+|ADOKit|ADOKit is a toolkit that can be used to attack Azure DevOps Services by taking advantage of the available REST API|https://github.com/xforcered/ADOKit|
 
 ### Adversary Emulation
 |Name|Description|URL|
