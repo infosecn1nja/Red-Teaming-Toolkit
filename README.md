@@ -79,6 +79,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |mortar|evasion technique to defeat and divert detection and prevention of security products (AV/EDR/XDR)|https://github.com/0xsp-SRD/mortar|
 |ProtectMyTooling|Multi-Packer wrapper letting us daisy-chain various packers, obfuscators and other Red Team oriented weaponry. Featured with artifacts watermarking, IOCs collection & PE Backdooring. You feed it with your implant, it does a lot of sneaky things and spits out obfuscated executable.|https://github.com/mgeeky/ProtectMyTooling|
 |Freeze|Freeze is a payload toolkit for bypassing EDRs using suspended processes, direct syscalls, and alternative execution methods|https://github.com/optiv/Freeze|
+|Shhhloader|Shhhloader is a work in progress shellcode loader. It takes raw shellcode as input and compiles a C++ stub that does a bunch of different things to try and bypass AV/EDR|https://github.com/icyguider/Shhhloader|
 
 ## Delivery
 ### Phishing
@@ -133,6 +134,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SourcePoint|SourcePoint is a C2 profile generator for Cobalt Strike command and control servers designed to ensure evasion.|https://github.com/Tylous/SourcePoint|
 |RedGuard|RedGuard is a C2 front flow control tool,Can avoid Blue Teams,AVs,EDRs check.|https://github.com/wikiZ/RedGuard|
 |skyhook|A round-trip obfuscated HTTP file transfer setup built to bypass IDS detections.|https://github.com/blackhillsinfosec/skyhook|
+|GraphStrike|Cobalt Strike HTTPS beaconing over Microsoft Graph API|https://github.com/RedSiege/GraphStrike|
 
 ### Log Aggregation
 |Name|Description|URL|
@@ -332,6 +334,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |MAAD Attack Framework|An attack tool for simple, fast & effective security testing of M365 & Azure AD.|https://github.com/vectra-ai-research/MAAD-AF|
 |GraphRunner|A Post-exploitation Toolset for Interacting with the Microsoft Graph API|https://github.com/dafthack/GraphRunner/|
 |ADOKit|ADOKit is a toolkit that can be used to attack Azure DevOps Services by taking advantage of the available REST API|https://github.com/xforcered/ADOKit|
+|TokenTactics|Azure JWT Token Manipulation Toolset|https://github.com/rvrsh3ll/TokenTactics|
 
 ### Adversary Emulation
 |Name|Description|URL|
