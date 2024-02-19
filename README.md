@@ -37,6 +37,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |dnscan|dnscan is a python wordlist-based DNS subdomain scanner.|https://github.com/rbsec/dnscan|
 |spoofcheck|A program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing.|https://github.com/BishopFox/spoofcheck|
 |LinkedInt|LinkedIn Recon Tool|https://github.com/vysecurity/LinkedInt|
+|BBOT|Recursive internet scanner inspired by Spiderfoot, but designed to be faster, more reliable, and friendlier to pentesters, bug bounty hunters, and developers.|https://github.com/blacklanternsecurity/bbot|
 
 ## Initial Access
 
