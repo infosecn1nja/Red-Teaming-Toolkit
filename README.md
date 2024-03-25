@@ -103,6 +103,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |Cobalt Strike|Cobalt Strike is software for Adversary Simulations and Red Team Operations.|https://cobaltstrike.com/|
+|SpecterInsight|SpecterInsight is a cross-platform, post-exploitation command and control framework based on .NET for red team engagements, threat emulation, and training. It provides a variety of obfuscated payloads out-of-the-box and makes avoiding detection a core feature. Command outout is returned in JSON format and exported to ELK for analysis of operations with pre-built dashboards.|https://practicalsecurityanalytics.com/specterinsight/|
 |Brute Ratel C4|Brute Ratel is the most advanced Red Team & Adversary Simulation Software in the current C2 Market.|https://bruteratel.com/|
 |Empire|Empire 5 is a post-exploitation framework that includes a pure-PowerShell Windows agent, and compatibility with Python 3.x Linux/OS X agents.|https://github.com/BC-SECURITY/Empire|
 |PoshC2|PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement.|https://github.com/nettitude/PoshC2|
