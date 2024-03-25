@@ -388,6 +388,13 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |VECTR|VECTR is a tool that facilitates tracking of your red and blue team testing activities to measure detection and prevention capabilities across different attack scenarios|https://github.com/SecurityRiskAdvisors/VECTR|
 |PurpleOps|An open-source self-hosted purple team management web application.|https://github.com/CyberCX-STA/PurpleOps|
 
+### Threat Intelligence
+|Name|Description|URL|
+|-----|-----------|----|
+|APT REPORT|Interesting APT Report Collection And Some Special IOC|https://github.com/blackorbird/APT_REPORT|
+|Awesome Threat Intelligence|A curated list of Awesome Threat Intelligence resources|https://github.com/hslatman/awesome-threat-intelligence|
+|deepdarkCTI|Collection of Cyber Threat Intelligence sources from the deep and dark web|https://github.com/fastfire/deepdarkCTI|
+
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
