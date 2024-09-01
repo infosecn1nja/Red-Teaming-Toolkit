@@ -38,6 +38,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |spoofcheck|A program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing.|https://github.com/BishopFox/spoofcheck|
 |LinkedInt|LinkedIn Recon Tool|https://github.com/vysecurity/LinkedInt|
 |BBOT|Recursive internet scanner inspired by Spiderfoot, but designed to be faster, more reliable, and friendlier to pentesters, bug bounty hunters, and developers.|https://github.com/blacklanternsecurity/bbot|
+|Gato (Github Attack TOolkit)|Gato, or GitHub Attack Toolkit, is an enumeration and attack tool that allows both blue teamers and offensive security practitioners to identify and exploit pipeline vulnerabilities within a GitHub organization's public and private repositories.|https://github.com/praetorian-inc/gato|
 
 ## Initial Access
 
@@ -199,6 +200,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |nanodump|A Beacon Object File that creates a minidump of the LSASS process.|https://github.com/helpsystems/nanodump|
 |Koh|Koh is a C# and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.|https://github.com/GhostPack/Koh|
 |PPLBlade|Protected Process Dumper Tool that support obfuscating memory dump and transferring it on remote workstations without dropping it onto the disk.|https://github.com/tastypepperoni/PPLBlade|
+|TrickDump|Dump lsass using only NTAPIS running 3 programs to create 3 JSON and 1 ZIP file... and generate the Minidump later!|https://github.com/ricardojoserf/TrickDump|
 
 ## Privilege Escalation
 |Name|Description|URL|
@@ -308,6 +310,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpExfiltrate|Modular C# framework to exfiltrate loot over secure and trusted channels.|https://github.com/Flangvik/SharpExfiltrate|
 |DNSExfiltrator|Data exfiltration over DNS request covert channel|https://github.com/Arno0x/DNSExfiltrator|
 |Egress-Assess|Egress-Assess is a tool used to test egress data detection capabilities.|https://github.com/FortyNorthSecurity/Egress-Assess|
+|VeilTransfer|VeilTransfer is a data exfiltration utility designed to test and enhance the detection capabilities. This tool simulates real-world data exfiltration techniques used by advanced threat actors, allowing organizations to evaluate and improve their security posture.|https://github.com/infosecn1nja/VeilTransfer|
 
 ## Miscellaneous
 ### Threat-informed Defense
@@ -337,6 +340,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |GraphRunner|A Post-exploitation Toolset for Interacting with the Microsoft Graph API|https://github.com/dafthack/GraphRunner/|
 |ADOKit|ADOKit is a toolkit that can be used to attack Azure DevOps Services by taking advantage of the available REST API|https://github.com/xforcered/ADOKit|
 |TokenTactics|Azure JWT Token Manipulation Toolset|https://github.com/rvrsh3ll/TokenTactics|
+|Maestro|Maestro is a post-exploitation tool designed to interact with Intune/EntraID from a C2 agent on a user’s workstation without requiring knowledge of the user’s password or Azure authentication flows, token manipulation, and web-based administration console.|https://github.com/Mayyhem/Maestro|
 
 ### Adversary Emulation
 |Name|Description|URL|
