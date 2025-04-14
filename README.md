@@ -399,6 +399,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Awesome Threat Intelligence|A curated list of Awesome Threat Intelligence resources|https://github.com/hslatman/awesome-threat-intelligence|
 |deepdarkCTI|Collection of Cyber Threat Intelligence sources from the deep and dark web|https://github.com/fastfire/deepdarkCTI|
 |CTI Dashboard|Stay informed about cybersecurity threats in real time! Access a variety of threat intelligence vendor reports and useful resources all in one place.|https://start.me/p/wMrA5z/cyber-threat-intelligence|
+|Hudson Rock|Free cybercrime intelligence toolset to check if an email address or domain was compromised in Infostealer malware attack|https://www.hudsonrock.com/threat-intelligence-cybercrime-tools|
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
