@@ -119,6 +119,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Havoc|Havoc is a modern and malleable post-exploitation command and control framework, created by @C5pider.|https://github.com/HavocFramework/Havoc|
 |NimPlant|A light first-stage C2 implant written in Nim and Python|https://github.com/chvancooten/NimPlant|
 |SharpC2|SharpC2 is a Command & Control (C2) framework written in C#. It consists of an ASP.NET Core Team Server, a .NET Framework implant, and a .NET MAUI client.|https://github.com/rasta-mouse/SharpC2|
+|Loki|Node.js Command & Control for Script-Jacking Vulnerable Electron Applications|https://github.com/boku7/Loki|
 
 ### Staging
 |Name|Description|URL|
