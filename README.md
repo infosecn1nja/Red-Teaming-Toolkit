@@ -120,6 +120,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |NimPlant|A light first-stage C2 implant written in Nim and Python|https://github.com/chvancooten/NimPlant|
 |SharpC2|SharpC2 is a Command & Control (C2) framework written in C#. It consists of an ASP.NET Core Team Server, a .NET Framework implant, and a .NET MAUI client.|https://github.com/rasta-mouse/SharpC2|
 |Loki|Node.js Command & Control for Script-Jacking Vulnerable Electron Applications|https://github.com/boku7/Loki|
+|AdaptixC2|Adaptix is an extensible post-exploitation and adversarial emulation framework made for penetration testers. The Adaptix server is written in Golang and to allow operator flexibility.|https://github.com/Adaptix-Framework/AdaptixC2|
+|Nimhawk|A powerful, modular, lightweight and efficient command & control framework written in Nim.|https://github.com/hdbreaker/Nimhawk|
 
 ### Staging
 |Name|Description|URL|
@@ -202,6 +204,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Koh|Koh is a C# and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.|https://github.com/GhostPack/Koh|
 |PPLBlade|Protected Process Dumper Tool that support obfuscating memory dump and transferring it on remote workstations without dropping it onto the disk.|https://github.com/tastypepperoni/PPLBlade|
 |TrickDump|Dump lsass using only NTAPIS running 3 programs to create 3 JSON and 1 ZIP file... and generate the Minidump later!|https://github.com/ricardojoserf/TrickDump|
+|RemoteMonologue|RemoteMonologue is a Windows credential harvesting technique that enables remote user compromise by leveraging the Interactive User RunAs key and coercing NTLM authentications via DCOM.|https://github.com/3lp4tr0n/RemoteMonologue|
 
 ## Privilege Escalation
 |Name|Description|URL|
@@ -297,6 +300,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Coercer|A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 9 methods.|https://github.com/p0dalirius/Coercer|
 |SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 |orpheus|Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types|https://github.com/trustedsec/orpheus|
+|goexec|GoExec is a new take on some of the methods used to gain remote execution on Windows devices. GoExec implements a number of largely unrealized execution methods and provides significant OPSEC improvements overall.|https://github.com/FalconOpsLLC/goexec|
 
 ### Tunneling
 |Name|Description|URL|
