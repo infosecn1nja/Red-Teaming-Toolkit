@@ -41,6 +41,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Gato (Github Attack TOolkit)|Gato, or GitHub Attack Toolkit, is an enumeration and attack tool that allows both blue teamers and offensive security practitioners to identify and exploit pipeline vulnerabilities within a GitHub organization's public and private repositories.|https://github.com/praetorian-inc/gato|
 
 ## Initial Access
+|Exploit Pack|Exploitation Framework with over 39.500+ exploits, monthly zero-days and utilities. |https://github.com/byt3bl33d3r/SprayingToolkit](https://exploitpack.com/indexexploitpack.html|
 
 ### Brute Force
 |Name|Description|URL|
@@ -99,6 +100,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |BeEF|BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser|https://github.com/beefproject/beef|
 
 ## Command and Control
+|ControlPack|Multi-agent C2 framework designed with stealth and EDR/AV evasion at its core.|https://exploitpack.com/indexcontrolpack.html|
 
 ### Remote Access Tools (RAT)
 |Name|Description|URL|
