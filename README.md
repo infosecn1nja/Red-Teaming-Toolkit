@@ -82,6 +82,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |ProtectMyTooling|Multi-Packer wrapper letting us daisy-chain various packers, obfuscators and other Red Team oriented weaponry. Featured with artifacts watermarking, IOCs collection & PE Backdooring. You feed it with your implant, it does a lot of sneaky things and spits out obfuscated executable.|https://github.com/mgeeky/ProtectMyTooling|
 |Freeze|Freeze is a payload toolkit for bypassing EDRs using suspended processes, direct syscalls, and alternative execution methods|https://github.com/optiv/Freeze|
 |Shhhloader|Shhhloader is a work in progress shellcode loader. It takes raw shellcode as input and compiles a C++ stub that does a bunch of different things to try and bypass AV/EDR|https://github.com/icyguider/Shhhloader|
+|DllShimmer|Weaponize DLL hijacking easily. Backdoor any function in any DLL.|https://github.com/Print3M/DllShimmer|
 
 ## Delivery
 ### Phishing
@@ -250,6 +251,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |ShellGhost|A memory-based evasion technique which makes shellcode invisible from process start to end.|https://github.com/lem0nSec/ShellGhost
 |PoolPartyBof|A beacon object file implementation of PoolParty Process Injection Technique by @SafeBreach and @0xDeku, that abuses Windows Thread Pools.|https://github.com/0xEr3bus/PoolPartyBof|
 |EDRSilencer|A tool uses Windows Filtering Platform (WFP) to block Endpoint Detection and Response (EDR) agents from reporting security events to the server|https://github.com/netero1010/EDRSilencer|
+|EDR-Freeze|EDR-Freeze is a tool that puts a process of EDR, AntiMalware into a coma state.|https://github.com/TwoSevenOneT/EDR-Freeze|
 
 ## Persistence
 |Name|Description|URL|
@@ -301,6 +303,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 |orpheus|Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types|https://github.com/trustedsec/orpheus|
 |goexec|GoExec is a new take on some of the methods used to gain remote execution on Windows devices. GoExec implements a number of largely unrealized execution methods and provides significant OPSEC improvements overall.|https://github.com/FalconOpsLLC/goexec|
+|BitlockMove|Lateral Movement via Bitlocker DCOM interfaces & COM Hijacking|https://github.com/rtecCyberSec/BitlockMove|
 
 ### Tunneling
 |Name|Description|URL|
@@ -308,6 +311,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Chisel|Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server.|https://github.com/jpillora/chisel|
 |frp|frp is a fast reverse proxy that allows you to expose a local server located behind a NAT or firewall to the Internet.|https://github.com/fatedier/frp|
 |ligolo-ng|An advanced, yet simple, tunneling tool that uses a TUN interface.|https://github.com/nicocha30/ligolo-ng|
+|SockTail|SockTail is a small binary that joins a device to a Tailscale network and exposes a local SOCKS5 proxy on port 1080. It's meant for red team operations where you need network access into a target system without setting up wonky port forwards, persistent daemons, or noisy tunnels.|https://github.com/Yeeb1/SockTail|
 
 ## Exfiltration
 |Name|Description|URL|
