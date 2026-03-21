@@ -326,6 +326,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |Tidal Cyber|Tidal Cyber helps enterprise organizations to define, measure, and improve their defenses to address the adversary behaviors that are most important to them.|https://app.tidalcyber.com|
+|Asqav|AI agent governance platform with quantum-safe audit trails (ML-DSA), policy enforcement, and multi-party authorization for autonomous AI agents|https://github.com/jagmarques/asqav-sdk|
 |Control Validation Compass|Threat modeling aide & purple team content repository, pointing security & intelligence teams to 10,000+ publicly-accessible technical and policy controls and 2,100+ offensive security tests, aligned with nearly 600 common attacker techniques|https://controlcompass.github.io|
 
 ### Cloud
