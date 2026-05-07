@@ -371,14 +371,16 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |promptfoo|CLI and framework for evaluating, testing, and red-teaming LLM applications and prompts.|https://github.com/promptfoo/promptfoo|
 |Garak|LLM vulnerability scanner designed to probe for weaknesses, jailbreaks, and unsafe behaviors in language models.|https://github.com/NVIDIA/garak|
 |deepeval|DeepEval is a simple-to-use, open-source LLM evaluation framework, for evaluating large-language model systems.|https://github.com/confident-ai/deepeval|
+|PyRIT|The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.|https://github.com/microsoft/PyRIT|
 
-### Offensive AI
+### Offensive AI Agent
 |Name|Description|URL|
 |-----|-----------|----|
 | PentAGI| Fully autonomous AI Agents system capable of performing complex penetration testing tasks.|https://github.com/vxcontrol/pentagi|
 | HexStrike AI| An advanced MCP server that lets AI agents autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research.|https://github.com/0x4m4/hexstrike-ai|
 | CAI| A lightweight, open-source framework that empowers security professionals to build and deploy AI-powered offensive and defensive automation.| https://github.com/aliasrobotics/CAI|
 |RedAmon|An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention.|https://github.com/samugit83/redamon|
+|raptor|About Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent.|https://github.com/gadievron/raptor|
 
 ### Living Off the Living Off the Land
 |Name|Description|URL|
