@@ -38,6 +38,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |spoofcheck|A program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing.|https://github.com/BishopFox/spoofcheck|
 |LinkedInt|LinkedIn Recon Tool|https://github.com/vysecurity/LinkedInt|
 |BBOT|Recursive internet scanner inspired by Spiderfoot, but designed to be faster, more reliable, and friendlier to pentesters, bug bounty hunters, and developers.|https://github.com/blacklanternsecurity/bbot|
+|NullSec Framework|Modular security framework with 150+ attack modules for WiFi auditing, network reconnaissance, and automated penetration testing. Includes WiFi Pineapple and Flipper Zero integration.|https://github.com/bad-antics/nullsec|
 |Gato (Github Attack TOolkit)|Gato, or GitHub Attack Toolkit, is an enumeration and attack tool that allows both blue teamers and offensive security practitioners to identify and exploit pipeline vulnerabilities within a GitHub organization's public and private repositories.|https://github.com/praetorian-inc/gato|
 
 ## Initial Access
