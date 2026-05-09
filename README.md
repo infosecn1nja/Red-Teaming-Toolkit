@@ -424,6 +424,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |-----|-----------|----|
 |APT REPORT|Interesting APT Report Collection And Some Special IOC|https://github.com/blackorbird/APT_REPORT|
 |Awesome Threat Intelligence|A curated list of Awesome Threat Intelligence resources|https://github.com/hslatman/awesome-threat-intelligence|
+|Pentest Mindmap|Interactive mindmap with 11,600+ pentesting commands organized by category — web, AD, privesc, network, OSCP|https://pentestmindmap.com|
 |deepdarkCTI|Collection of Cyber Threat Intelligence sources from the deep and dark web|https://github.com/fastfire/deepdarkCTI|
 |CTI Dashboard|Stay informed about cybersecurity threats in real time! Access a variety of threat intelligence vendor reports and useful resources all in one place.|https://start.me/p/wMrA5z/cyber-threat-intelligence|
 |Hudson Rock|Free cybercrime intelligence toolset to check if an email address or domain was compromised in Infostealer malware attack|https://www.hudsonrock.com/threat-intelligence-cybercrime-tools|
