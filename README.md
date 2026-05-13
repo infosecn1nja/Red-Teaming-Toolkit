@@ -43,6 +43,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |subfinder|Fast passive subdomain enumeration tool that discovers valid subdomains for websites by using passive online sources and certificates.|https://github.com/projectdiscovery/subfinder|
 |httpx|Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.|https://github.com/projectdiscovery/httpx|
 |naabu|Fast port scanner with a focus on reliability and simplicity. Designed to be used in combination with other ProjectDiscovery tools.|https://github.com/projectdiscovery/naabu|
+|Caido|A lightweight, modern web security auditing toolkit and proxy. Next-generation alternative to Burp Suite with AI-powered features.|https://github.com/caido/caido|
+|Censys Subdomain Finder|Enumerate subdomains using the Censys API. Useful for passive reconnaissance and attack surface discovery.|https://github.com/christophetd/censys-subdomain-finder|
 
 ## Initial Access
 
@@ -307,6 +309,8 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |SharpSploit|SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.|https://github.com/cobbr/SharpSploit|
 |orpheus|Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types|https://github.com/trustedsec/orpheus|
 |goexec|GoExec is a new take on some of the methods used to gain remote execution on Windows devices. GoExec implements a number of largely unrealized execution methods and provides significant OPSEC improvements overall.|https://github.com/FalconOpsLLC/goexec|
+|NetExec|The Network Execution Tool - a modern successor to CrackMapExec with enhanced features for network security assessment and post-exploitation.|https://github.com/Pennyw0rth/NetExec|
+|Certipy|Tool for Active Directory Certificate Services enumeration and abuse. Supports certificate theft, escalation, and persistence through AD CS.|https://github.com/ly4k/Certipy|
 |BitlockMove|Lateral Movement via Bitlocker DCOM interfaces & COM Hijacking|https://github.com/rtecCyberSec/BitlockMove|
 
 ### Tunneling
