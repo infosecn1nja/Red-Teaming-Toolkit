@@ -381,6 +381,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 | HexStrike AI| An advanced MCP server that lets AI agents autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research.|https://github.com/0x4m4/hexstrike-ai|
 | CAI| A lightweight, open-source framework that empowers security professionals to build and deploy AI-powered offensive and defensive automation.| https://github.com/aliasrobotics/CAI|
 |RedAmon|An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention.|https://github.com/samugit83/redamon|
+|Darkmoon|Open source autonomous AI penetration testing engine that orchestrates 80+ offensive tools via agentic reasoning and Markdown playbooks, executing real exploits across web, cloud, Active Directory and Kubernetes with proof-based findings.|https://github.com/ASCIT31/Dark-Moon|
 |raptor|Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent.|https://github.com/gadievron/raptor|
 
 ### Living Off the Living Off the Land
