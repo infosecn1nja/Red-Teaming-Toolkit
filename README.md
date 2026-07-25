@@ -179,6 +179,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |ImproHound|Identify the attack paths in BloodHound breaking your AD tiering|https://github.com/improsec/ImproHound|
 |ADRecon|ADRecon is a tool which gathers information about the Active Directory and generates a report which can provide a holistic picture of the current state of the target AD environment.|https://github.com/adrecon/ADRecon|
 |ADCSPwn|A tool to escalate privileges in an active directory network by coercing authenticate from machine accounts (Petitpotam) and relaying to the certificate service.|https://github.com/bats3c/ADCSPwn|
+|ADscan|Active Directory pentesting CLI for Linux that automates enumeration, Kerberoasting, AS-REP roasting, ADCS/ESC abuse, DCSync, RBCD and attack path analysis to Domain Admin.|https://github.com/ADScanPro/adscan|
 
 
 ## Credential Dumping
