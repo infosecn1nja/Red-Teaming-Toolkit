@@ -206,6 +206,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |PPLBlade|Protected Process Dumper Tool that support obfuscating memory dump and transferring it on remote workstations without dropping it onto the disk.|https://github.com/tastypepperoni/PPLBlade|
 |TrickDump|Dump lsass using only NTAPIS running 3 programs to create 3 JSON and 1 ZIP file... and generate the Minidump later!|https://github.com/ricardojoserf/TrickDump|
 |RemoteMonologue|RemoteMonologue is a Windows credential harvesting technique that enables remote user compromise by leveraging the Interactive User RunAs key and coercing NTLM authentications via DCOM.|https://github.com/3lp4tr0n/RemoteMonologue|
+|Plunder|A tool for scanning the local filesystem and directories for leaked clear text passwords and detecting credentials.|https://github.com/plunder-pentesttool/plunder|
 
 ## Privilege Escalation
 |Name|Description|URL|
