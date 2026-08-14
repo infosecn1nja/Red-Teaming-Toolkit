@@ -23,11 +23,12 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |Name|Description|URL|
 |-----|-----------|----|
 |RustScan|The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).|https://github.com/RustScan/RustScan|
-|Amass|In-depth Attack Surface Mapping and Asset Discovery|https://github.com/OWASP/Amass|
-|gitleaks|Gitleaks is a SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.|https://github.com/zricethezav/gitleaks|
+|Amass|In-depth Attack Surface Mapping and Asset Discovery|https://github.com/owasp-amass/amass|
+|gitleaks|Gitleaks is a SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.|https://github.com/gitleaks/gitleaks|
 |S3Scanner|Scan for open S3 buckets and dump the contents|https://github.com/sa7mon/S3Scanner|
 |cloud_enum|Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.|https://github.com/initstring/cloud_enum|
 |Recon-ng|Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.|https://github.com/lanmaster53/recon-ng|
+|Xquik|Independent X (Twitter) data API for search, follower export, monitors, and MCP.|https://github.com/Xquik-dev/x-twitter-scraper|
 |buster|An advanced tool for email reconnaissance|https://github.com/sham00n/buster|
 |linkedin2username|OSINT Tool: Generate username lists for companies on LinkedIn|https://github.com/initstring/linkedin2username|
 |WitnessMe|Web Inventory tool, takes screenshots of webpages using Pyppeteer (headless Chrome/Chromium) and provides some extra bells & whistles to make life easier.|https://github.com/byt3bl33d3r/WitnessMe|
