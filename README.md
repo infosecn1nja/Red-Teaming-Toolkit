@@ -373,6 +373,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 |deepeval|DeepEval is a simple-to-use, open-source LLM evaluation framework, for evaluating large-language model systems.|https://github.com/confident-ai/deepeval|
 |PyRIT|The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.|https://github.com/microsoft/PyRIT|
 |FuzzyAI|The FuzzyAI Fuzzer is a powerful tool for automated LLM fuzzing. It is designed to help developers and security researchers identify jailbreaks and mitigate potential security vulnerabilities in their LLM APIs.|https://github.com/cyberark/FuzzyAI|
+|ARES|ARES is an orchestration framework that lets you plug in your own attacks, evaluators, and guardrails to test LLMs|https://github.com/IBM/ares|
 
 ### Offensive AI Agent
 |Name|Description|URL|
