@@ -382,6 +382,7 @@ This repository contains cutting-edge open-source security tools (OST) that will
 | CAI| A lightweight, open-source framework that empowers security professionals to build and deploy AI-powered offensive and defensive automation.| https://github.com/aliasrobotics/CAI|
 |RedAmon|An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention.|https://github.com/samugit83/redamon|
 |raptor|Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent.|https://github.com/gadievron/raptor|
+|Pentest Swarm AI|Open-source framework where a swarm of AI agents autonomously performs recon, chains vulnerabilities, and proves exploitation with a working proof-of-concept, behind fail-closed scope, egress and authorization guardrails.|https://github.com/Armur-Ai/Pentest-Swarm-AI|
 
 ### Living Off the Living Off the Land
 |Name|Description|URL|
